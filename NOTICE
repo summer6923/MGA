@@ -1,0 +1,20 @@
+MGA corrected research implementation
+
+This distribution contains a local research fork derived from Plato, a research
+framework for federated learning developed by the TL-System contributors, and
+its KNOT federated-unlearning implementation associated with Ningxin Su and
+Baochun Li, Asynchronous Federated Unlearning, IEEE INFOCOM 2023.
+
+Upstream project: https://github.com/TL-System/plato
+KNOT project: https://ningxinsu.github.io/projects/infocom23/
+
+The parent source distribution carries the Apache License, Version 2.0. A complete
+copy is included as LICENSE. Existing upstream copyright and attribution notices
+are retained. The inspected parent distribution did not include a NOTICE file;
+this file provides added attribution and is not a representation that upstream
+supplied this exact notice.
+
+This local fork includes historical research modifications and the corrected MGA
+request barrier, client-local poisoning, explicit reverse optimization, validation
+and release support files. See MODIFICATIONS.md and docs/source_manifest.json.
+It is not an official upstream Plato/KNOT release and implies no endorsement.

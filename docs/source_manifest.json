@@ -1,0 +1,1511 @@
+{
+  "input_bundle_sha256": "108b2587e15ea5b74f875328c714968ffd51f1cf180ecd4fb98201399932ac09",
+  "files": [
+    {
+      "path": "configs/mga_mnist_smoke.yml",
+      "input_sha256": "ba162a1b2084dd956521672d1e4628164b129a7cecdad7165bd0805eb96ef983",
+      "release_sha256": "ba162a1b2084dd956521672d1e4628164b129a7cecdad7165bd0805eb96ef983",
+      "ast_unchanged": false,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "fedunlearning_server.py",
+      "input_sha256": "b76d336e0bc8f802fb1353eb67ffd32a820b4b22b21a29dfe3a0d2a025a24b9c",
+      "release_sha256": "52021e5399ad324323354923d97922ed01611b9f772a630f4513e0a5f025d3d9",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "forgetting_iid.py",
+      "input_sha256": "50d5605cddc7c1f9a07df8e19494cf9ecea1a8dad316cd29b486ca1bf71020cb",
+      "release_sha256": "4f7a8c93d2cdecf9fcce744500f1af37e4342b6e609f8ed6dc19ac07596360c8",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "knot.py",
+      "input_sha256": "29484264f825473ed048f021914a2fb5bce560f8407908f6de9d95e47c330c0b",
+      "release_sha256": "46ab7305b9eaf11a3edcb3280fe981954c16536065fad21fb0e1771807d7aebc",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "knot_algorithm.py",
+      "input_sha256": "5febd5f50fbedd10a7bb208ed58d285bd56fed78cc0bd60ead1593b4de1d8e7d",
+      "release_sha256": "0c5bf0cb8252aae08f7ea4c260dd46cff4e47e73b0406f535e4418cb3d338ca0",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "knot_client.py",
+      "input_sha256": "7500230ea55da60bf17c751aa42c0c4c5a55f925e1e3fe70542fe94e0400ce30",
+      "release_sha256": "0b93736af20a5c41ac2c5b0451361adf8452a81b06633c033b17bfa3da89e6e4",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "knot_server.py",
+      "input_sha256": "917f3c3175a7265e2bb894ece8fc973354f24fa97832ffa45dcbce3c8627fe72",
+      "release_sha256": "04b12aa56d2a1a4c515903501e81eefc8385a0f194c426a3c00d5bebf957e799",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "knot_trainer.py",
+      "input_sha256": "b1e5e53f64b6997bae4e2af1601ee08ccfa493a983c0d836b2ad5f2eded4a60e",
+      "release_sha256": "ee768875c35b2170b25e0cf9e3b712abcde20cfedd018f539d52e4c621a15ad6",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "mga_data.py",
+      "input_sha256": "567808a93921b69ce6cd4b0a899452303b1d30ba8f0019b39b4bc945de7850fb",
+      "release_sha256": "9d0688fe0cd32efbab38d45e4d800ae3221d0c5e7e7a2cb9e55f385ec6341443",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "mga_entry.py",
+      "input_sha256": "dcfac7a53c47e92163c00c96f52e9e1b0e997ffcda65dabcdda470b9429e2e4e",
+      "release_sha256": "e95cd15399fb560afffa2dd844dd0619657adad6fc261f2ba5fa39a8a8de4d40",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "mga_protocol.py",
+      "input_sha256": "a9e3f08472a35b81cf36363f3cdc7065e0dee7f9205f7d824c75b52ee4bd2f09",
+      "release_sha256": "52e4e82e77bdc3e483af17f33e8d0143e48f20c8136a578a51d35d80830e9c36",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "mga_reverse.py",
+      "input_sha256": "0926b64820128e6dc6fbfbb9cb744f253e2b65d1bfe0c10bc3223ae3e5309a25",
+      "release_sha256": "e13d932ae8f19963c7526f6850ad11b995e47001540ef051c41345a157a40434",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/__init__.py",
+      "input_sha256": "90ce79aaa852adce1bf92b4d4ee374dd2ae0d24c1f8351b805c9022a1532b5a1",
+      "release_sha256": "bad5cfc924fd47bff7b74f51aaa51476acd5df91d985b59988e81ebf0a990a82",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/algorithms/__init__.py",
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "release_sha256": "8295651a7ce2a05ec60e7b1d9e7a9541bb698719ec3783fc5a8d7f7a0a4b3214",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/algorithms/base.py",
+      "input_sha256": "bec5b4dcdb8eac71377568bf610da8eec01f4663128e3e5e3694efecfdd1ac4d",
+      "release_sha256": "d628b59ce3c25aef251ab3397231f428f98a077526260fedb9d958623d492439",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/algorithms/fedavg.py",
+      "input_sha256": "0330619ce4510263095201f5401ccf56bad630db367403fbeb3d12bd8880cd6c",
+      "release_sha256": "3ca6e70540fe8682d81fb9cec2071faad3a1336dd115e4941d0095c031b1296e",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/algorithms/fedavg_gan.py",
+      "input_sha256": "f9015cd596c2b10607e8db0b151123c821ced7a707d3c394a585c7c89889b4ee",
+      "release_sha256": "c004d8a536752039b06b88b41e5be4891cff07a941d238c08d8e329a69e620cb",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/algorithms/fedavg_personalized.py",
+      "input_sha256": "4381da0c1345452fdd78d4fcab4ff3d55e4d50ef530f2e68f9f727815cc81ff4",
+      "release_sha256": "e409283a4847f3f366f72082029e45f6d4c446fc04618f745fc68b92f4f27a01",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/algorithms/mindspore/fedavg.py",
+      "input_sha256": "b23700a8e81ed8c6e79cb87c52777c1863a1461ed93517d753553cf572d844ba",
+      "release_sha256": "c320d060d379112a3b310079840f9b233c61a436fc12bd2008ac918df0ea23c5",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/algorithms/mindspore/mistnet.py",
+      "input_sha256": "1ac675bd9855e27bedcea6540d2234aa1e2c2719df2ae52876899f59a07d681c",
+      "release_sha256": "7f23ba67be836b0cc2393aa85c9d75dbb76c1bbc4a4aeb7d3e65ede09ed0fb03",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/algorithms/mistnet.py",
+      "input_sha256": "16a1d0c58b09dd262c7010a6368839113a2dce3f6be5bfdbbd32da4de6583478",
+      "release_sha256": "3349abda0142a9eb7d03899f747986f50946614f3b2354f8e5a245cbd6075371",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/algorithms/registry.py",
+      "input_sha256": "4f311430f301cfa57b309bf2e4095d370ab96504b4ff5d14917bcde40af093b9",
+      "release_sha256": "b8d6d1c816b85c34f5129a653a92e1138153b8a25b075d86fb94c32bcbaff64d",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/algorithms/split_learning.py",
+      "input_sha256": "944deb66376196fe2d131c904b0b9cdfed6cb7477e09a4e3b5bc84e76c174016",
+      "release_sha256": "743c3fdb7e6a3083417c9317f2e74728c82ab6f2317093acb07d5e62892b68fd",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/algorithms/tensorflow/fedavg.py",
+      "input_sha256": "9cb88d669c6d2e02295d0cc503887d4438de48feea079bedc8185b077f94f2a2",
+      "release_sha256": "c53ef013982f3902dcf304ed4062e52fd0533452e85fa7ea429f347180fdf3f6",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/callbacks/__init__.py",
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "release_sha256": "8295651a7ce2a05ec60e7b1d9e7a9541bb698719ec3783fc5a8d7f7a0a4b3214",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/callbacks/client.py",
+      "input_sha256": "fe0dc4cac996a8c483a745b2b6061ded500a051f832c69765e2a0a28ab18c458",
+      "release_sha256": "f63cdf0a68d394e9d2dfe951a28d000957ce58fa6b6a6d07fbf346e338c2328b",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/callbacks/handler.py",
+      "input_sha256": "fa81bfce7a8dd8c3c6df24b0428c3d621fbb934ded8aff427439bc92d1a237bb",
+      "release_sha256": "5ea376f7b71bdbf303366c07fab411d495b9be7d08d68477674f5a22bb72870c",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/callbacks/server.py",
+      "input_sha256": "22580ae5bad762d4dd94ed7b5fc0a1c7fe6e40dc265f7d3ed96bd89d88b4ddbf",
+      "release_sha256": "5a30f4c69b1c39d023d2a0eb012101dc4a5ccbe9a8603175d0140cc5a1272fee",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/callbacks/trainer.py",
+      "input_sha256": "565336b6cd5de16716bf4d6706ab392bbb5b5301c72e44e64176463e7fc45772",
+      "release_sha256": "6f70f08a8c1b692c2245afaab86a45dabf2e10ad209bf40980a782aa9671fb22",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/client.py",
+      "input_sha256": "db9647cbf77d441c422bf98242d7de9b96d5965b6b4a4acc2c839e780a4535b9",
+      "release_sha256": "e6a5da04f6072c1435d7cd6d6ae882e4b79ad8965fba3af63dbd5601eb702ccb",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/clients/__init__.py",
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "release_sha256": "8295651a7ce2a05ec60e7b1d9e7a9541bb698719ec3783fc5a8d7f7a0a4b3214",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/clients/base.py",
+      "input_sha256": "98328954f91709ed44b1f1bd10b94b6ba0677607a61a82d497acc0c456e88e37",
+      "release_sha256": "66125cdfcb8fba2634e5d53295184686227198e09401ad4465c05ef089cbcabc",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/clients/edge.py",
+      "input_sha256": "bd2f5e4b2e2d6b89673226c16cb227f8db6572ac75fb049aaa09e4ebd5cf934a",
+      "release_sha256": "0adfd9d92d56615806c36f55820024d6d539f80f127d12811804a5cdfbcc5fdd",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/clients/fedavg_personalized.py",
+      "input_sha256": "4f3687aaf8937482fe00894c2846d855751cc987fa1502e038f62c3215df4952",
+      "release_sha256": "48011f88252f8626a36dff9320243ce0965562815912cfe14d2425f5cca19610",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/clients/mistnet.py",
+      "input_sha256": "f929f6e9678a3ea672d6108fc787792038e2d3a3cb1e2f1b60ea4c39645c8bc2",
+      "release_sha256": "b22f39ee46a6451fb10b2ef883021015ec4684c7e2d2c22b262db51d3639a1e1",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/clients/registry.py",
+      "input_sha256": "9a2c223930014f2797e0baa22105353aa014f2f70cb4ff5626d06a34de42dcb8",
+      "release_sha256": "03fea71184e48fc464d2714e98866c6e88bd179bdd64d2c7ec8187710902faf7",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/clients/self_supervised_learning.py",
+      "input_sha256": "89eaf4ddff2d98ebf51be96d4e65fb604d678e13f37128cf64988a1db80aa5fc",
+      "release_sha256": "3eed8cbdefb777dada6c2afc8ac52a8b672ea110671fe04a852cc4b989e0d3e9",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/clients/simple.py",
+      "input_sha256": "4f4fc3f8d787dd33cd99aa1cf6b303595020c63b806c140542dfd573f10639da",
+      "release_sha256": "9b2886120f2fe6d903308d677a55d498c9384418f28e1d75c47b097aa8d15582",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/clients/split_learning.py",
+      "input_sha256": "171605fe3199292c8c66875c57b48437d661b641dbd8e1bffd22d43e2ebcc984",
+      "release_sha256": "8c4673ca8ffe86b938052db8e7863034d6f9b1462f26f95de30e1162fa9db3ba",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/config.py",
+      "input_sha256": "73773a4ec11fb84eabe7566b317905aae28b1a61e0f7b103edfdc1fbb96424db",
+      "release_sha256": "709d1204d2e23fa1304d7c43ab66f3f25d7a76c8581228f7c5b1ead181520102",
+      "ast_unchanged": false,
+      "legacy_default_path_changed": true,
+      "cpu_device_fallback_fixed": true
+    },
+    {
+      "path": "plato/datasources/__init__.py",
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "release_sha256": "8295651a7ce2a05ec60e7b1d9e7a9541bb698719ec3783fc5a8d7f7a0a4b3214",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/datasources/base.py",
+      "input_sha256": "65f80da3206b1110cc1ae21a4d89ced6fa532ffcf3014d0958e14c5f2d549cec",
+      "release_sha256": "9fedf0e4521b4deceaf5b707f2d2936e68c42bcd2ab3d0d2108efeca94bdaed2",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/datasources/celeba.py",
+      "input_sha256": "adb7f10a547fce4ea4fad8179b5135bf084e0b1a80e585ef98005bac05ff6d60",
+      "release_sha256": "40ded65e3b7983f8f9005217cb3f438d325a2f78b67a6e8fa3fe31afc29a986c",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/datasources/cifar10.py",
+      "input_sha256": "1b2feecd56ecae88d3d963ba02ea28bbee9b4abc37d428986806755a4fbc3281",
+      "release_sha256": "578f0a5e88124b84f091dfcabea81dcde64c82c4dee42f6bca0329b27d9f5b5d",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/datasources/cifar100.py",
+      "input_sha256": "7bec9c1ff394691cc1cefc6cb711182d3debf201415b281ca468be7356feb102",
+      "release_sha256": "6b44f6900bc4ba827984044a9280b23d333961ecdfe6832ca40f6a089c2965d4",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/datasources/cinic10.py",
+      "input_sha256": "8c71361b43e1573074a22500c31e3a320ac318f27f612c75e46236d4fac2d57b",
+      "release_sha256": "0b95a0ac8b7b326cb89735d897edb44b4479d3ba681edbbe51b89c2920bae21c",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/datasources/coco.py",
+      "input_sha256": "94fa8a26c1b56624a94b6b534fe3fb8189e18ef44633a471af2ed9870d4865b0",
+      "release_sha256": "ff1466936b8075d04f75b00e6ec7bf4163cb5ab700e0b25ef11bffc6362bb433",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/datasources/datalib/__init__.py",
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "release_sha256": "8295651a7ce2a05ec60e7b1d9e7a9541bb698719ec3783fc5a8d7f7a0a4b3214",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/datasources/datalib/audio_extraction_tools.py",
+      "input_sha256": "44ba2c511d07e5b9cf0df96e25be5bdd28bb15155b366b6cfb87c10ffefd8285",
+      "release_sha256": "272049c74ad211de039151baa98aa4e5eb1e0aa3447f72090ee426c5e97580a8",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/datasources/datalib/data_utils.py",
+      "input_sha256": "37c9e5ef0813a4366aacf1207ab0d9668e2dde15dc4e7cf8e395ee65dc0031f1",
+      "release_sha256": "5d4f830ce2f4fbfb04e16be729f3d53bf6a6a809217ad7bb47b6646ab65cd45d",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/datasources/datalib/flickr30kE_utils.py",
+      "input_sha256": "be59ddf2d7510ec942988be8560c34f60ff60617030f08e4fdfa5426593ae9b4",
+      "release_sha256": "fd5b234d74243e070206c6f1d79ba01bc93a3b14dfae8d3898bc3b436014e370",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/datasources/datalib/frames_extraction_tools.py",
+      "input_sha256": "80612a02a0901621b7b842ad67897f68b75273ac2210ac267a3ad47031bc2f46",
+      "release_sha256": "6487693939651278e94ff43638fcf6fcd5b4957a4b76d39f000d49a082358888",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/datasources/datalib/gym_utils/__init__.py",
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "release_sha256": "8295651a7ce2a05ec60e7b1d9e7a9541bb698719ec3783fc5a8d7f7a0a4b3214",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/datasources/datalib/gym_utils/gym_trim.py",
+      "input_sha256": "684c864889fd84e8916ddc301e6c88e1291f682a545d502e777c1d928aa7ed0e",
+      "release_sha256": "70fbb186973dcc47bb6aab6dbc329abebf81e100d453a3ace236908f0da370e9",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/datasources/datalib/modality_data_anntation_tools.py",
+      "input_sha256": "f44f9b92a34ab6401914bb2cf74101882691b5105ba970b2c064a3d423bb5e47",
+      "release_sha256": "616fe20c657f32b1882d734ec28a45d201fb3d87db92fbc46df305b58ad915cb",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/datasources/datalib/modality_extraction_base.py",
+      "input_sha256": "3355f057903406671250c10eab1e9e75e28f6e8ce2df1ec4debe8fd1bdb262b3",
+      "release_sha256": "bf534854e57e5d30b892a355726dec5b9b9cf30229439d654f719be05e0f77a4",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/datasources/datalib/parse_datasets.py",
+      "input_sha256": "8672c9465a0594253b5cbe4ece9ac9818f47035133ac93142eda3d5fcb176d0a",
+      "release_sha256": "7cb93ce386f592d40cbec799e7961070978dd16015d5b047af8d545746606095",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/datasources/datalib/refer_utils/__init__.py",
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "release_sha256": "8295651a7ce2a05ec60e7b1d9e7a9541bb698719ec3783fc5a8d7f7a0a4b3214",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/datasources/datalib/refer_utils/referitgame_utils.py",
+      "input_sha256": "0bcf5ab1507a5c7f624274b1868530b6b2568504a27e6c233fa839e777824867",
+      "release_sha256": "1dd2e1b879b34d48f45f406d97d1097e132d7b396b22da84fd20ee370060bf2c",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/datasources/datalib/tiny_data_tools.py",
+      "input_sha256": "00851c4518c744a83da4de2fc7d7412b6a860182ec7c5acdf3d54b729a662f34",
+      "release_sha256": "b2dbf409c4e6c02f1e7f7ec7fb682c552a30a73785f08c2348e9ec5d2549bbd9",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/datasources/datalib/video_transform.py",
+      "input_sha256": "342559e51e4d2878b16abc116fe6e5d9d3c8d82f0473d79fe0dafc28a2b34119",
+      "release_sha256": "5bc67bdc29d62debb95e79cd0e84a63077537094f3844e50b0ae91b03771a2a7",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/datasources/emnist.py",
+      "input_sha256": "ebc785b0ee37716a1d153b6b228e767e6becda7b8ecac671da7109902fb033f6",
+      "release_sha256": "c29af57f9608482eba07d72bd1ed1d576142d0cd039243431024aa54d5d7d8c9",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/datasources/fashion_mnist.py",
+      "input_sha256": "b94fe6987219ac72d7a2dba290c093590a0d92d1cadc4dfef40975131b989351",
+      "release_sha256": "8d98734220ab6e2301ff0bca78ee792e41e44d076df375a14ec43ac552f7179f",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/datasources/feature.py",
+      "input_sha256": "4ff18d6af3c25eda2abd00a9c4f862768f042ab68aaee328740875cf12ff62f9",
+      "release_sha256": "c483fc61c369d8eef3011beb4f22177df22c6c66ed416baf82402f4af874207c",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/datasources/feature_dataset.py",
+      "input_sha256": "1dbfd0ff7d888685eff7351e982839c52f44905f2356d120901a742708d093f0",
+      "release_sha256": "49d1e7e9f13cf882f8e5d498d40fe20bb03b9953f8894e23374a8cdc1ebe01da",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/datasources/femnist.py",
+      "input_sha256": "4790b76b5d0706ed6dfbdc87ae7ecb71207d1a89922137ec43882e97ce7fcdea",
+      "release_sha256": "64b4a482b4d8b8fc04f34885d8b0576ded06761809d3d276f973228b0bbc0efd",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/datasources/flickr30k_entities.py",
+      "input_sha256": "5548067ad5613a65e3f2fcfae4ba144884c4179bde47985a12cea450f896a71d",
+      "release_sha256": "6a52baee3ec463c6be92de5ed2e7de14f6d9ed46168662a484bd3b5a2f0b30ac",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/datasources/gym.py",
+      "input_sha256": "2ecbd91634e43f7935ffe524f4158a35a05b35d0c26bcebd82eea93a46fb61d3",
+      "release_sha256": "c2b522cc825d9f9ffc7fb5ef1da6d622cecaeb317c6791ae77fa277a110b51b4",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/datasources/huggingface.py",
+      "input_sha256": "08fa351a75191cba3b1f669f6e4fab0ef8ed5d75156f89658be9f32508500083",
+      "release_sha256": "49ddb9e006fcf3736fc18104b52f7380fa97e7e5cddd4a8df3086e68c2a22d16",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/datasources/kinetics.py",
+      "input_sha256": "331168d281f624269a54bf1afb652d11a57a02c5d6cf78e60efec83615d9bc9f",
+      "release_sha256": "4923d3e2fd5a5d0fc4d1857efc6b05775566d7fc76a2a94c5e194f4373e62531",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/datasources/mindspore/mnist.py",
+      "input_sha256": "57d15a1b91f62ee07cbc07e7446d8b262ead24e3f180d34cee71cd0718ba9202",
+      "release_sha256": "b504eafcefbe3c3b615aa256e135ee4c8d6d03ca8ab1b23a9283fa17ffa2f49d",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/datasources/mnist.py",
+      "input_sha256": "9477354a14c903569e9c50a1c9901cd56a1462dddd9188652eaf700cc110c92d",
+      "release_sha256": "032f2b38c4025977c553e97566ea5f716a556478e3ba55cb2e3a19a2d3792115",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/datasources/multimodal_base.py",
+      "input_sha256": "09b200f00799e1b958b0248ef282c8d43edd2674ddb63054f8919548d6affa6c",
+      "release_sha256": "0e8997fdb5772bb982d53cd32d8e7c9c0de8f7242fba16d54102c59c500c51ed",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/datasources/pascal_voc.py",
+      "input_sha256": "59a5ee3a66e9f5adf0b5403aeeadaef61a96f67f9f160520cda963b51f7bf16a",
+      "release_sha256": "710b5132c561102c09fe90d6b4c48ac17a4b2530c0a53b6f2818c22dabd8ead2",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/datasources/purchase.py",
+      "input_sha256": "e3b98d2e054834fb4fa0dcd05d3898f0d9e6416cddad847b2a0138acf579554b",
+      "release_sha256": "fb96f71584018a3a99b0bf5f996f8a4294866513fdc53fc627849890fc78ba28",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/datasources/qoenflx.py",
+      "input_sha256": "70c96e72878f774aa624e54a713f4dbaedb1dc4327743e3f5f21c5020b26717b",
+      "release_sha256": "924998c2652e8987fcb8618000c1de203e5f00341897ce2dbceef72661953ab3",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/datasources/referitgame.py",
+      "input_sha256": "e9d114050f07e7a02ba330a3690264a538e980633c0dc814ac4550849909576b",
+      "release_sha256": "4cea473c16207fd0634cb63e653d1700245dbc0a26b613f26ae5cf2575fd5845",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/datasources/registry.py",
+      "input_sha256": "1332b48906006568fee56e647b5291c73f38e86c9c6f145f747996dc41eadd6c",
+      "release_sha256": "ff7056ecfdca94b260a0ddeb3052393d4fb2e6f722786bb3b21525ae65de0999",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/datasources/self_supervised_learning.py",
+      "input_sha256": "47c72235f79387e34c3a67ef2f7c041a22e73d229cc5a51e867d897866eecc2e",
+      "release_sha256": "b0a7bb362095c5722bf1873e1fedeacaa9719f4e31bb09c7017cbe46a4518c71",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/datasources/stl10.py",
+      "input_sha256": "094da3e120c149e053b6a1bec9d66c6f3cad6c9178ffd7479b862ab1564d9d45",
+      "release_sha256": "bdaef9253ee982f32d203f84be20c17e7926711bbc28761226a1a8e5b5d96e89",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/datasources/tensorflow/fashion_mnist.py",
+      "input_sha256": "41202a54a598e7cf92ef2678eb710e0dbf4b9a11516d0570ef89d7efd20a13a2",
+      "release_sha256": "ab690fd983b77a06b3531cc2f3bd77ba352b38c87029c14a09e9b607d3aad88e",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/datasources/tensorflow/mnist.py",
+      "input_sha256": "0e5bb740a4f361f3eb851711df2d8bd489d64fcb08530fbe790d265b727e82e4",
+      "release_sha256": "def8d8cf1d6cfaaad63e561a6545e40dcec164365cfd04a7ef602b76d20dfbbc",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/datasources/texas.py",
+      "input_sha256": "09a8b02f6fdff18a524d12892862b12f880168a06d6e1da64f0f9d544b328454",
+      "release_sha256": "bb15dbd783b8be63205ff3f0a4a4faca8a01cbb6ec88c0ee7f0635eb4a5db68c",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/datasources/tiny_imagenet.py",
+      "input_sha256": "3f9e865422b392a7c5cb7a0d99bea0c791cdb127ed2dace860119dcb0321e0db",
+      "release_sha256": "9f0ed4dd108090a2a40fe25183dc643f71a48bea03da7103e2a8cca7071f78a3",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/datasources/yolov8.py",
+      "input_sha256": "ce6dc1e34c0fcb09bd660ead2584a50c39150425b3fea199982ada912f8566cd",
+      "release_sha256": "cb421d1325ab5e23029177081f889b242ba52abbb6a1ced32d7adab9ece28bfc",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/models/__init__.py",
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "release_sha256": "8295651a7ce2a05ec60e7b1d9e7a9541bb698719ec3783fc5a8d7f7a0a4b3214",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/models/cnn_encoder.py",
+      "input_sha256": "b9877ca8d1015de57ad1f42e147596bf97843b651148322265a3fb318df1b91f",
+      "release_sha256": "9de5c9afad067c4ae5b0b7f6ad9aa65b0d594304717a6ee934308bd085c2cc5b",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/models/dcgan.py",
+      "input_sha256": "0c2835d0cff287a258344b7206014a50ccb5ece2a7f57f555943c41091c21f48",
+      "release_sha256": "17930e62982011b7718eda99a13807f0483ac66fec94651c976f51859efc7315",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/models/general_multilayer.py",
+      "input_sha256": "8c15f9f97f1d5be4bbb8f9bf318d13a08816521d7bb882e7a40e802aeef108df",
+      "release_sha256": "c21ae9a27332f3ecc36e87b874671e0c43dcb1a618d4394fb28d2361e63695af",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/models/huggingface.py",
+      "input_sha256": "15c895e2aa14b3793c4282afda348dba4fce5477bf2ef987d989fa42072159d0",
+      "release_sha256": "1a289d1ee43adb8de4a593d32d06e97736e6c27f6e5e7b2f08922b66bf38b3a7",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/models/lenet5.py",
+      "input_sha256": "7884ac76894c2bf952101618dce8c48cd6495c1720d0ed078dce148267ccda48",
+      "release_sha256": "4639bde1ff68e31d50d1ca1e5df88ff81f6162891ea70b57c6db8bcad8a9e37a",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/models/mindspore/lenet5.py",
+      "input_sha256": "b029326250e7217c2024d3aef49946ee73aba1c0d5d421334bc6e74e7870004f",
+      "release_sha256": "3fc265cf0f45d5459b69152de3bd2032866413ec0c96b438c883c9e2c87855ef",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/models/multilayer.py",
+      "input_sha256": "1683d87f0ba9bdbabab1050ca07834f3dcd8325b907abd2b428419a91e498615",
+      "release_sha256": "871773b8294ca1b877009bfe24b9ed65d7e659b901ab97cd7000288e61e36545",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/models/multimodal/__init__.py",
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "release_sha256": "8295651a7ce2a05ec60e7b1d9e7a9541bb698719ec3783fc5a8d7f7a0a4b3214",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/models/multimodal/base_net.py",
+      "input_sha256": "5fbcb4f8b8b4bee6bc2c4cc40e45d8957d1add45e89eb117a839d5bd1c340396",
+      "release_sha256": "97e8a5ce8b0bc1f1f5317452a70155008e72e8c8bcb34e5e26ebd9a2557ca3ee",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/models/multimodal/blending.py",
+      "input_sha256": "44d996f72fbbbbf00db2e19b6bd417f2245872105e9acdb78803b2b81402c1a5",
+      "release_sha256": "4c11f73869fc87a7d1c2e48c3fd1ca8064e767ef78caa996e168d235992c58f4",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/models/multimodal/fc_net.py",
+      "input_sha256": "45168165807a9d502d713f87f7d2391449da76454da9aa232dfe42f530e6866f",
+      "release_sha256": "c8f77d23d532b7e74b3b7665720a83510de273d5f248a4667c404387b4ead7bc",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/models/multimodal/fusion_net.py",
+      "input_sha256": "1a2e630fe62496df24ea334bd2513aa321516419f8eb43c533210e757ddb1f63",
+      "release_sha256": "00f11525219a16782e5a62cbd8e5bbf708548a8b47d40c60beed7af182d81dd1",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/models/multimodal/multimodal_module.py",
+      "input_sha256": "597cb84ff97d230a69ec1df86b08dabff2bd4596612a2556920d5874d92a2615",
+      "release_sha256": "5746f7d67a2e4984d5c55001c80ca6d7f1e115d799193e3391a68893502154b5",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/models/registry.py",
+      "input_sha256": "a583eaa0f05554c243281a3431f9449d6f70fc86f1ec78589c1811dd4fd6b2a0",
+      "release_sha256": "74b987f2afdb168600b15037261ad40a8260d6ed214705a4a4a56ba7f26a9fa5",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/models/resnet.py",
+      "input_sha256": "66bf32b570b81a8e73d4dca27cce6bf329486605350e7ac8301158ebe588a0ff",
+      "release_sha256": "7b60530cf3dace02a4d3d5a621658eae8ada1a198d761a976b2ff2cda67aa61d",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/models/tensorflow/lenet5.py",
+      "input_sha256": "e959e07f8be9cafbc5583438aa84ae1e11b64986eff4224e63b367e70d79d94a",
+      "release_sha256": "6cd5eb57fe0c9970b90d0974a5966c7a6caf398f89a32c57b726bbfdd8113c4c",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/models/torch_hub.py",
+      "input_sha256": "fb70f582aa4a16f06f83f926872cc7543402369bd296da6232b079de6e9283cc",
+      "release_sha256": "0569dda31523c1bfce5f12a4a94a5a7fe1aa0d10aaf6cae4890156e3145a2098",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/models/vgg.py",
+      "input_sha256": "45f931f3288d208ae268153d39c2bfc1064db6008952fa9dab37c053f25bcb5d",
+      "release_sha256": "fce27c4ca3701cfa859e41263f0a06543a27d26b9dbc0190f78aa44cadad6eb6",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/models/vit.py",
+      "input_sha256": "af75a5d34027678d91424269f2f217301a39377dbbd5667768368f752166c9c0",
+      "release_sha256": "3493cdce57fb601a51b834952cfd6468c674063e28836c79067d4662c4952acf",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/models/yolov8.py",
+      "input_sha256": "c2647e2a463eaa257666c2337d862cc8586746d6b6c7abf9ab8c632a7ba4c6b6",
+      "release_sha256": "03c3d27b0b6d6e949d7f73f9cd55224a90744172a63b0b88eb37adc3d04b00da",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/processors/__init__.py",
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "release_sha256": "8295651a7ce2a05ec60e7b1d9e7a9541bb698719ec3783fc5a8d7f7a0a4b3214",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/processors/base.py",
+      "input_sha256": "2ffe1024673aeb0f6a398bd046ee5dbd8aaac5aeb8ab07c5d6e4987b4e6d0208",
+      "release_sha256": "f468c6a7c596e500695f76afa4c52b40e11666af3c965ffa861f2661707d29a8",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/processors/compress.py",
+      "input_sha256": "7e39dae29c3ba6db19d89fef1bdb50415598e8286de18ebcde16729628e5fa2d",
+      "release_sha256": "8e1fedef41a5e62cada4fc499e60ad63e7054ea0ab0950ec223e36468e3ffcca",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/processors/decompress.py",
+      "input_sha256": "0d9068b8f96f6f44722306e7104faad6ea3221287d0a45092e73ffb3355c364e",
+      "release_sha256": "4f7de82fe0924be6d968ea648b723caa72a961ed8fae1b144094cb299a5fdefb",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/processors/feature.py",
+      "input_sha256": "5886bd6306e03ec0ef02c42516a0e54a25634a36a236a79e1e5be107410319cb",
+      "release_sha256": "d70a2d10563d5dde9355fa9ee4334563fabedffd492ad9f3060a007667a02f6b",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/processors/feature_additive_noise.py",
+      "input_sha256": "d3784f3e44ab578f99a611493845b645f124cfb589f24386f0c8c9b6ddbd488f",
+      "release_sha256": "9ac3052a29ce3b4b644ee3f67d4066657886227269aaa06a0c868f04ac53dbdb",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/processors/feature_dequantize.py",
+      "input_sha256": "be4170c9787ea8f15229c85abf8c215ffc7ac5a89602b974546b3d6a53e40485",
+      "release_sha256": "34d862abe27719fa9f0842fc0fae23e935b7457c91412b7024c4849112545bf9",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/processors/feature_gaussian.py",
+      "input_sha256": "3f72357d7932de7b14fec121dc34b896c791a202a2ceb16f8d63edad3a55537b",
+      "release_sha256": "ef6318c30a5d15cb50be0830e7830e86705b65b787a5bc92d913aecfc13eb5a1",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/processors/feature_laplace.py",
+      "input_sha256": "30423990f4bbeaacadac947dd6468f931fa2a0d019008268bdc8c82ca22ab880",
+      "release_sha256": "a08dbc753b45f69d8964275325cf1c20c4127b89fca38ee28478f6876101c41c",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/processors/feature_quantize.py",
+      "input_sha256": "8c9ef44b1079ac2ea49ecf2868314d771649d9bbdb40d145497e6a50aa30e299",
+      "release_sha256": "df9658a72ee9d56d0288105c7f1d89cc9660dcebee8d21ed4f338990c5098b4f",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/processors/feature_randomized_response.py",
+      "input_sha256": "27e378861f7af4dd00ade0c00a6db970fd1bee3e489b25df1d142ececa02ab33",
+      "release_sha256": "c41f09f7e94ee85402ab85419cf0cc53e910248bc70800cc2fd017c4a81aa7c0",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/processors/feature_unbatch.py",
+      "input_sha256": "0fbec26ad88a0f7c42291977cd1135a423b8b13acd13a2a6399e1b5c26a364ee",
+      "release_sha256": "db0f395455dae6d33d0189bfedfa76e818655c3b702e1d7cb6f4cf5741444ba3",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/processors/inbound_feature_tensors.py",
+      "input_sha256": "d90ecaa7a73fa114787366ba71a02e2272a53c588111542670b0e0a81ab32a0b",
+      "release_sha256": "806cd1d77620acf1519b7027f380a076ffc671f26a3beb9d981c6e6c29e43de7",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/processors/model.py",
+      "input_sha256": "e6b74e181463a4d04283d78ca4bd45753f2f9b76322ec93ef39b79f5a24148ee",
+      "release_sha256": "75565f0e151815239b363b88dd238f41fa00b4e440383cf540cdc3278a084951",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/processors/model_compress.py",
+      "input_sha256": "e9c5184db84a7beab172e6a680f1ad829f3b1834176b097e5112246caf25732e",
+      "release_sha256": "fdbc0f65b4bf7e15db20d4f3b0f6760e280fb892da7ffbb306b3349979d5b16a",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/processors/model_decompress.py",
+      "input_sha256": "029e1bd07f8fd5bf5e385aec18a9e85dd72fde23da945ea0d0b0eff74702613a",
+      "release_sha256": "663d8f294352fcbb9698ecbc1f3bef0354068a614fe47227cca8977959e3a72d",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/processors/model_decrypt.py",
+      "input_sha256": "82f9d052aa1b4e6df59407ed0b5f699d90ee2daefb0548dfaf0bcf01048ee041",
+      "release_sha256": "bd3cf6b63354d85cdca7cd56b0dd2e7073ee1564c5e1ec7b581cc04a3e049b78",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/processors/model_deepcopy.py",
+      "input_sha256": "589ea0e3e0a2dbdd0b7ce25acf05de13f5f77833cee11ac372b3ed26c4a22769",
+      "release_sha256": "e17b907ec19855d5e27985094ced87d3344d49b83d8c6106a6a3d18651d037d4",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/processors/model_dequantize.py",
+      "input_sha256": "21d6b650557d902332717b44ad7ad69dd55f0fdcfdf87dcae03ffc7a95af7fd7",
+      "release_sha256": "300d74a4ef1c9570d385b5f9c7e5c13e9aac76798fd986acd1fcea29d7f31679",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/processors/model_dequantize_qsgd.py",
+      "input_sha256": "95ef9922a05ae66bf1f0e4681ee22b0e61e3f8452f2674a6c9932cba5f01486f",
+      "release_sha256": "de46922206144c1e2fe0cb335216a92328ee7efeae8caee99d4de7f320c9f0fb",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/processors/model_encrypt.py",
+      "input_sha256": "f0c600bda264070aacf167a8ca85ef014286a7fe447420f86c60642f15325384",
+      "release_sha256": "a8895be463a5e362e1b779e352e475b2715229524ec0bd72eb4eb1e2b1fefe5a",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/processors/model_quantize.py",
+      "input_sha256": "283a5b72fa03d3ee79a319b770cdc0fa26bfbc17677b6777549bad3017807f70",
+      "release_sha256": "79f3169dcaa0f735becc9bf1ad0abe3fcfea94e6d47a4c5ceef98362e2db6ae8",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/processors/model_quantize_qsgd.py",
+      "input_sha256": "bab6a4419cf89c334a19c6523187285bb9b51a8b570bf9f3e28aacc8d4d76bc2",
+      "release_sha256": "20ac53653c5085cffad61db5a40f5c3c55a2722287a7eb52b6e86003a603d67b",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/processors/model_randomized_response.py",
+      "input_sha256": "fe0d45d0186aafd113ffc2220835cb52c198f0c31073c94818cc9033b5ecd15c",
+      "release_sha256": "2de7c87b6c1e0b78e650cba7ca44ab5ece7c7a8d86354043e11c54d5ae39d56b",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/processors/outbound_feature_ndarrays.py",
+      "input_sha256": "293e9070d97ef7a1051969119d383f2887252d7b67741780a572cf67ede8f9ca",
+      "release_sha256": "ece0116a58bd54cbf5cd64344d8295b0bf93e90ff9cd3007c47c37b5f17ecdf2",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/processors/pipeline.py",
+      "input_sha256": "6a64a74820e8de71de7e01ed2138e55f74aaded086a75a2fff9382b311856d9e",
+      "release_sha256": "485a97baf4dd9cd5b9710c3a43a7ac7bd6030c9cb61150a2cfee3a16febce564",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/processors/registry.py",
+      "input_sha256": "4b80f296a05a86c753f5c0e707f09f6b4ff71d8adf8255bf43a398325ff2d31d",
+      "release_sha256": "cb6d9d16c7a403bba2830434f9033f3f08ffea36e3df058c686bb6e759305d21",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/processors/structured_pruning.py",
+      "input_sha256": "ea274dd08b43cd2879c1dd39f4ab8e58fe3cdaa8f86db1d004b8b70ae3a87f12",
+      "release_sha256": "6fe5e61bd3d6c99bd96fd2dee5c6ac45dbfda6220371083931bdb040f22bd9b0",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/processors/unstructured_pruning.py",
+      "input_sha256": "ad0c29111de5010f0fd33caaa40f772d6da86a156a397ec05415e2ec9f0be76d",
+      "release_sha256": "c4f82702f1cd39260dc2258fac604cc625ea5d3922edf20a1f9bf14639d19bee",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/samplers/__init__.py",
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "release_sha256": "8295651a7ce2a05ec60e7b1d9e7a9541bb698719ec3783fc5a8d7f7a0a4b3214",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/samplers/all_inclusive.py",
+      "input_sha256": "8dbd4d416799c6fbd6edb4fdd6ac02f7e6c0f2d63ba765f65802450684185491",
+      "release_sha256": "bccd07718097e56f33f97db5e81cca361a71d888deb9f5d7c3e3327652e6e3d8",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/samplers/base.py",
+      "input_sha256": "762d482bf0a1eb1f4cc725a8b05a45dbe78118a49d4bd9db921b6183822e86c5",
+      "release_sha256": "82295aa38a2d3f78a14c5892d91becdee8770df3d158b6a6a6e97a48a9f0f7cf",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/samplers/dirichlet.py",
+      "input_sha256": "544d69fe2457795185234707fefd872a42b19963b36c5a223588999d301f716f",
+      "release_sha256": "841210fd2c3296feb1455fece0399e7df1c2ebf7f1dfcad49af4256d20873be0",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/samplers/distribution_noniid.py",
+      "input_sha256": "82fc37d44e4c4932b4bcb4aaf7c2519108f459b500ef0967da9c12a7c487b47f",
+      "release_sha256": "f11c7bd57d6eb22452062a13d398694a051c459fb3b9c4100cf4d173d725d02d",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/samplers/iid.py",
+      "input_sha256": "9c873ec027ad54f6082fe6f9edb95957cf8bedf44bce9a4b35a68a61cbb1b888",
+      "release_sha256": "200a86f5717a3c5a76b788b82eb3a1d1cfd38aadbf66ac4686f95d722c486668",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/samplers/label_quantity_noniid.py",
+      "input_sha256": "d844bc6282cfc843a8a239972db5b088603c274b7a6bc201d8f710478ef7a448",
+      "release_sha256": "0785916aebafcb4533598cc8c227388c69989235c587f3ad110505f446036aa1",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/samplers/mindspore/dirichlet.py",
+      "input_sha256": "0d5bbe41ae3186a70a703227e3b4965feeefc32531d3002bae2167a98cceb011",
+      "release_sha256": "24aacf00e41757ae5b137c1ba03009655faea26c1646bc4a750821e52d28f470",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/samplers/mindspore/iid.py",
+      "input_sha256": "14a345dda340f0059505858821107db60bfd40e0acd5c8ebc8c53215a1735c87",
+      "release_sha256": "76621b9ce77230583e1a98a9672cda2e87e2b6a1666b5070e83be2a970055d7b",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/samplers/mixed.py",
+      "input_sha256": "b3f9cd9ebe03fde22e180c355dbf529f0bab286187e486d4ceb475c014d91dc7",
+      "release_sha256": "9154fc9af5bdfdba2a59f5da6a80154728f53c49d4f4ce6e8448cf2fe961a371",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/samplers/mixed_label_quantity_noniid.py",
+      "input_sha256": "4327374ccc74cc7214ad227b7d9602174658f06496c15c57a8756c4c10f3d991",
+      "release_sha256": "41adcff748f21e650325df366c67c3e34cca6066d066030248ad28c101bae0fb",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/samplers/modality_iid.py",
+      "input_sha256": "67d100e304da6d52505a00d9323467d7b19b6a84853bb1f7e4877452e7f528e5",
+      "release_sha256": "08e47c32c22041491f2867493439702b51d60a159002a5a995b0a671dd51d561",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/samplers/modality_quantity_noniid.py",
+      "input_sha256": "948445649671f52946aec1a0f40707622962b86e5c476c372c9d53142f0b08e6",
+      "release_sha256": "18b03300259977d0630914c2601f58f3580ff6c5bc10873f509b9ebb38e1f6a1",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/samplers/orthogonal.py",
+      "input_sha256": "df051990eec87bc42e86713c9c46accc13fff2762ca6bc92b4159f9c7067cc25",
+      "release_sha256": "5ff38ea952d315eaee1adc733883a8f6bf9e54bc61782c52fa44a355fbd1a3f7",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/samplers/registry.py",
+      "input_sha256": "ddf00ff0c07aab5d29f7ff1881d7426c869dcabfc9b255aabfb15e303b2f937c",
+      "release_sha256": "25d2e517bc0bf3c5361d18a741f4ecadce812b29b6af263a1a27b3e5861d39d5",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/samplers/sample_quantity_noniid.py",
+      "input_sha256": "bba243fb545d9d63eb69adbe3a53809514e7604536da935fceda80f05b651a76",
+      "release_sha256": "305c860afc8e85fb10ce91a8a11df56015df4ce049d27ee08addd0d81df034bf",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/samplers/sampler_utils.py",
+      "input_sha256": "3c87a4d071b8dd73a98238d57b896f0c1240bbb9106c6b35601afa87b0f2905d",
+      "release_sha256": "672f96a3ccaf519a7017f8e6955cec2e134554d20843029212665a8360555d79",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/samplers/tensorflow/base.py",
+      "input_sha256": "89aea663914b40509e74c92da68b7a41b090385c23660f1a548697d64e5f3aaa",
+      "release_sha256": "0f4126499bf6f5fa484b2b90547e26c782d8b985eff9c15374bfdc57f5fcfc78",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/servers/__init__.py",
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "release_sha256": "8295651a7ce2a05ec60e7b1d9e7a9541bb698719ec3783fc5a8d7f7a0a4b3214",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/servers/base.py",
+      "input_sha256": "9175490cafc661e09ea56484cc80bc6c5fa3d7ef1b6d00a2a0bfbf2a63d766c1",
+      "release_sha256": "8aa7866461437dd6721ad393ad739fb3ae835687514e543c207edde7348f8e6e",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/servers/fedavg.py",
+      "input_sha256": "f02f51188e1d981e377555594ab669c028b6165708dbcd4dc69e5b3410a973c2",
+      "release_sha256": "1ca2ad7edffe3c3abcee60307a837850c5f473b12307f2bd0f0e1b9a0cda32d5",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/servers/fedavg_cs.py",
+      "input_sha256": "bc5ff8a765b19f8bc23e9e7ff454d4eabdedc6d9c8dcc468c0afb59f80ef930d",
+      "release_sha256": "ef09180f3b79405cbb0e5569cd088fd779edf9f4ed3db2f6e6e905dc929eef7d",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/servers/fedavg_gan.py",
+      "input_sha256": "1bf7180d71682525e93923b056de12c4f53ac18f9eafe2eab5d6e40b6fd3e495",
+      "release_sha256": "9b99213187b1bd82e39a9ee772c642a0182e1b3ec7260e9f0683917b84edaa0f",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/servers/fedavg_he.py",
+      "input_sha256": "541e95ee7d94c3a6d69fc103adb03269be74a5101136ccb920cb473e9bfa8f28",
+      "release_sha256": "6b474fdb26b3f8973abe62b0de92cf9db17a28307955bb4d38454af5b783fc29",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/servers/fedavg_personalized.py",
+      "input_sha256": "c0fbb3a114ede060750a7809ceb216e20ebe7da4b7caf9e2b432fb2929656df2",
+      "release_sha256": "ae00e5d351201e8632c1a95bbcfddcefeae1ea1963c33818c5b7c306a41ed0e2",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/servers/mistnet.py",
+      "input_sha256": "3ba4131109b890883b9dad622b6a938129fdd4222cfc72c2bfe5f63a48f3628a",
+      "release_sha256": "3d66fe73427926425256327cc5db708cd4090bba95a783fa7d484031e5806758",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/servers/registry.py",
+      "input_sha256": "bdf79970bfd30d7d5353fe491f4386a930885209d4062ad6fc3b2ce9eaf83838",
+      "release_sha256": "02617894448eda2803228e3d827d0ee777f3025a582d5459f1a55803c23c9961",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/servers/split_learning.py",
+      "input_sha256": "f31799b41e1544ad415592fec31264da282cb26bd6f860ee64f78ffef9c86d89",
+      "release_sha256": "09088d07937aaaf0acb13b3e43d6d2ef21e757f87a4797dc6bfacb71aad841e0",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/trainers/__init__.py",
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "release_sha256": "8295651a7ce2a05ec60e7b1d9e7a9541bb698719ec3783fc5a8d7f7a0a4b3214",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/trainers/base.py",
+      "input_sha256": "5d443ba8294f6d9049429e170f87209dd06b878acec927fd0faf955a08882b69",
+      "release_sha256": "fb2b81fd6d210474b52d0711f66778d4fc9b504037a20faab5359d5d2d7142cf",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/trainers/basic.before_external_baselines.py",
+      "input_sha256": "ac270acd8e65e2bd2ccd6a261dc78a571384982e955bb340ec21ca9a23cf554c",
+      "release_sha256": "40115a89f2ad7cf9855b12d3a7fd8e7f9d09052c7ececc9a5b2dd97366b82dbf",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/trainers/basic.py",
+      "input_sha256": "2a7a9fc3f28e45ffbd0946d5b3118a168a8c7222dd72c6a9e49ee37047bac61f",
+      "release_sha256": "d7477e8388df8dc4e5ab57c371722b739dabca6da03c15877c2b633967d1c229",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/trainers/basic_r.py",
+      "input_sha256": "246d0dadfd23b97f73227f3fc7ec1c6476140f235593c67f4c5028f5b44b5694",
+      "release_sha256": "93cb0785699cd09c0dafd5be73c40b878ddb08de238b2be30a6cc9f265e99cc7",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/trainers/diff_privacy.py",
+      "input_sha256": "ef57b878bd18588081e69f643b66dfce5e2750c2631e3bde3e5a01c33e111d2b",
+      "release_sha256": "5877afc36fafc77325b3b8af98b4e449e7c8db97c332ad535e7fdb11604a4852",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/trainers/gan.py",
+      "input_sha256": "43df6cb98f09588f97309a53323056df4214ca9c8d99f990bce9a0689064fe9f",
+      "release_sha256": "976ffac0b79132c4bf9f1a962fae6c6067ac6839693fc66261bdfa2b5decd1c3",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/trainers/huggingface.py",
+      "input_sha256": "b647b1add1ad089b4b85549a66da962025081b6b82fc038a06f1551ee382d411",
+      "release_sha256": "2afd8434bcc7117b2a6eb3c99c583e63ca839a7d8d1c96fff696bd282cf7c3cd",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/trainers/loss_criterion.py",
+      "input_sha256": "2ca6ee406a4dea0022c4b09758a86e64fe8323228c3d80c5ecdcddabd167f8b0",
+      "release_sha256": "990e1ae340ed5dd4a5feba49adcabf7ce50cfd69cf95ae29c2140a05a87ecd87",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/trainers/lr_schedulers.py",
+      "input_sha256": "72de9498b6a591e80eeb34c908dd27045ef3f789dc6751ae0f437fb0fc0645d6",
+      "release_sha256": "194d0a4b7517564a6ca2119e557fd344e9adb65ede9485c2b637e3f12d7de390",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/trainers/mindspore/__init__.py",
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "release_sha256": "8295651a7ce2a05ec60e7b1d9e7a9541bb698719ec3783fc5a8d7f7a0a4b3214",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/trainers/mindspore/basic.py",
+      "input_sha256": "f99b2f78df66874d967312c580afe5013e2ef4b5800375e64f9643c6539248f7",
+      "release_sha256": "e1b7479ea017056160f3ecbadd60d322df5d68f07f2da9363df6fe676b1c07e9",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/trainers/optimizers.py",
+      "input_sha256": "ab43e3da2112f899ff6ab115699ea66f758d2dadc938c225bda58c88623ee27e",
+      "release_sha256": "92c46ebd49ccd6c3ccc0dc482fe0020e7d28af5cb1f0f47d122f29b254f69626",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/trainers/pascal_voc.py",
+      "input_sha256": "1f68ed9d690d5d12f5124a68dc09dd6bb3043e95a7c888008e3fb0de30683a33",
+      "release_sha256": "012e6d1e30bbddca1280aa7253d892161bfa885cc9ff2de688a98cc1f2507db5",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/trainers/registry.py",
+      "input_sha256": "418d2224929743f57f142a592109f1999245aba1b10239ee759e63aa860aece3",
+      "release_sha256": "e18c8a2b2dcdb3e296b01464722c1356d29b7acbfe411ea9008daa8f1c7d06f9",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/trainers/self_supervised_learning.py",
+      "input_sha256": "da9cbf71f54ea2904926e78f1d819364bd0685b85d82f01794bc637abfabff43",
+      "release_sha256": "3b37704fb64a2bfe18522c116acf58dbd391a734c554b399f1b182b61c68c152",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/trainers/split_learning.py",
+      "input_sha256": "101c3bc90e8e20d2b509985c88791769fa64f345ed009b661d05dafb69b2df9b",
+      "release_sha256": "d8aee3c4c0593c25e0a2abef9183e17c015084c788e1eece39e9490ea39cdcf6",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/trainers/tensorflow/basic.py",
+      "input_sha256": "2500b94c87a8e2f21aa26d214b0d82a5729d2d34903d680950b9e120d0df4e12",
+      "release_sha256": "ad14959580f861b90548c3a7b58086775dc9f7871aedcbe869dace606a809fbb",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/trainers/tracking.py",
+      "input_sha256": "ebceae2109d8ed4317cd0fb0485130485975edcd2ccddbf4bec87b6cf92aecbd",
+      "release_sha256": "e5b000287c7111b144585e3f09eb3dbb2007aa7b60169b907ffc8f531a895718",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/trainers/utils.py",
+      "input_sha256": "8f18eb4e38c600b2bb83e0eaf8d7c46c361be51c47d9a1c5dcd585ed14ef19b8",
+      "release_sha256": "f62255e2e6f67a2028a16ebc878aae27cb3c48edcb2b45dc2911da88937f4e5a",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/trainers/yolov8.py",
+      "input_sha256": "2c946e5dd3687a377929994122f804077ee3257f442930c625bd7c35b9d49be4",
+      "release_sha256": "9f89749fd17eb01b25ce7e27a002ec6071d11a025a9ce758ac772ef20c62b725",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/utils/__init__.py",
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "release_sha256": "8295651a7ce2a05ec60e7b1d9e7a9541bb698719ec3783fc5a8d7f7a0a4b3214",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/utils/count_parameters.py",
+      "input_sha256": "f2627ab4fa642cfa99126f987b6e67b2fa34d65905d02abf9014fcf2e69ecac1",
+      "release_sha256": "ec48658e2206680275a62db052d8f294aa0f4abf623d6115c68acf6d15817255",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/utils/csv_processor.py",
+      "input_sha256": "caab89ba0e62e896e82d275bd49b8f665893c3b33a1b5197efacab98c9a65aa0",
+      "release_sha256": "78ff3bf78788e23dddf75665c2f2ae2f2bcdca43c71fef449c8c2ef7a8c5cc14",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/utils/data_loaders.py",
+      "input_sha256": "973b82f441929bd07e30239d9967c404b90cc932c046aa866e0bfc0f95c27425",
+      "release_sha256": "fc79be6573c8f9627f6ac448384c821f8c3588812ecd44d0a2a40409b7ddd869",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/utils/decorators.py",
+      "input_sha256": "ea4e95a12d33c67e3da21c026574bf82f808213a56e5c96ff80a453ff8f54ca6",
+      "release_sha256": "0728ae51fb110182ce3a722e5c5ee6ba8b15d718a6b51032e46107cd474903c9",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/utils/fonts.py",
+      "input_sha256": "151acab9d6fab75342ef4608749c27943a0b0b0d945fcbf2bbc49ac0798a9284",
+      "release_sha256": "cf6539bc980200783e8baa5442caa8a9a8a989e9d1bc6dbe78c1f47095604fa9",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/utils/homo_enc.py",
+      "input_sha256": "7c4dac314f7feae9a5be4deb2698cac2721b2828c620f12988e284e40124cab2",
+      "release_sha256": "3d70005bb3643aab63ac9c4769c003c3d28ec526cf7c8cde20ad8fe3ccf990cb",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/utils/lib_mia/__init__.py",
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "release_sha256": "8295651a7ce2a05ec60e7b1d9e7a9541bb698719ec3783fc5a8d7f7a0a4b3214",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/utils/lib_mia/mia.py",
+      "input_sha256": "8269789b43d79071d83074f98a59ab664568e5506483dfd347d16f29c411347f",
+      "release_sha256": "06fda763c6aa6ffbfcc6413cf9fd39d9c565c464413f26f1ac073fc47a65fe48",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/utils/lib_mia/mia_client.py",
+      "input_sha256": "36d21724ef4fd00274be7df03a03bd89f96f12e785844f8c7180e462206757ad",
+      "release_sha256": "0505b6cab960c9f3619b44293dd0c13609d01c73ffe4428d29bd43dc95e1e0dd",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/utils/lib_mia/mia_server.py",
+      "input_sha256": "c2e73b540ed513f630f93dbedbcebd6a09d36ee15598a66618b96fb7457e2c7c",
+      "release_sha256": "000ddcba94af419b496e238c14ddc26c6fa588b190acd3fba16bf2dd5b5ac3fc",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/utils/pth_rec.py",
+      "input_sha256": "d4d57a3892633d4477daa671346a1289cbb9eb098f3588e5e8118efe9fe913ce",
+      "release_sha256": "552fe903f9db291705b2cdad6415a8855b82c6db339eeb6a821b048406710143",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/utils/reinforcement_learning/__init__.py",
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "release_sha256": "8295651a7ce2a05ec60e7b1d9e7a9541bb698719ec3783fc5a8d7f7a0a4b3214",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/utils/reinforcement_learning/policies/__init__.py",
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "release_sha256": "8295651a7ce2a05ec60e7b1d9e7a9541bb698719ec3783fc5a8d7f7a0a4b3214",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/utils/reinforcement_learning/policies/base.py",
+      "input_sha256": "452c4e7bf6e5c771671a543378595c0164d5a4458d7b7e0507f184e8abfe8e6a",
+      "release_sha256": "2c315657bccf9f9ca9427a01d7d93f51774b56b46cb8b8c55c1f6e8732a932be",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/utils/reinforcement_learning/policies/ddpg.py",
+      "input_sha256": "32d06c0bd8021e23f2ae3b14d460d84aca161f138b26b573cf7ebf69b3b3a594",
+      "release_sha256": "27fc15c93d5d2199a397992df51be5b560aeaa60e827f471ebd7122d055120ce",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/utils/reinforcement_learning/policies/registry.py",
+      "input_sha256": "79c3c94684c8b9ea8631acd2847c1701524b97dc05daec7afe9acbfed4777e17",
+      "release_sha256": "5f700b0417acf1252cee61258426ad89316a03c401e94a0087784a68b2063beb",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/utils/reinforcement_learning/policies/sac.py",
+      "input_sha256": "5c56392c6d5964d9ba9aa6aa3ebb3510054d9318014ccc7d605a28dbd4e05886",
+      "release_sha256": "3704bcc87df33b07b66cf97769fe5ec4a68378f3af5d95de796ed07d69c0b396",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/utils/reinforcement_learning/policies/td3.py",
+      "input_sha256": "34f4cc5685d1fda44c56e76d777a78efe96b8b2974ac2b399d08eeedc807c880",
+      "release_sha256": "8cf58483a425e4c5bfcb8eedffd18b573921f0a7d189012986098047ee38d12e",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/utils/reinforcement_learning/rl_agent.py",
+      "input_sha256": "50b69b0dc7e08ca4a6c7658ebf22956ffe8ff73f3326e7d7b701b02177449e50",
+      "release_sha256": "697d8f19a5ad012dbdcb0b056458c6ea209c79a37d20aa2130b43f3cb07db383",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/utils/reinforcement_learning/rl_server.py",
+      "input_sha256": "bb9ef26f98de615c7cf5c2615748c42a28376224cb7240855d006a8ac26c8bce",
+      "release_sha256": "7d59aa0463615602238c02c6ca6b80b00768460ededb2a8e3d183b03dd8b9bd3",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/utils/rl_env.py",
+      "input_sha256": "1985a38e7cee8c77b9daaeb3950495da439ff37790c940790d4c7f6a0bc37f2d",
+      "release_sha256": "e42e5ce5cbb31e2035032b6dacc9142ff87c57aee2683fe5751980b31b0a3a3e",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/utils/s3.py",
+      "input_sha256": "720feed16cb3840b73cdc10169b1039e70d7e5163bd6de538e38df18b6608b56",
+      "release_sha256": "35adc01af926a5c94da124ad4aa5d82b291d0d33d10fd105b7e633b1ac587c2f",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/utils/trainer_utils.py",
+      "input_sha256": "425cd3fb923d0b9990fef64a0bd319327bce6cad7291708d8a8c4609b1e7b3af",
+      "release_sha256": "958214d9f6fe9c739173548346528729943132b6dde273b7610952fe73a39cf2",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "plato/utils/unary_encoding.py",
+      "input_sha256": "59ac836ad9cf29250fb894cf3bf13ffda6ee410ecf61ad178233bc4451bc2a42",
+      "release_sha256": "aeb14ebe31f4ab2c62ea0a2d3591c678d60baea0b1cc3e30e8c644e79285688d",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "README_MGA_FIX.md",
+      "input_sha256": "4c5deb79ebac10be23f5320d4138eb4dd98f31498ff875f6b751b8a42fbb938e",
+      "release_sha256": "4c5deb79ebac10be23f5320d4138eb4dd98f31498ff875f6b751b8a42fbb938e",
+      "ast_unchanged": false,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "run_mga.py",
+      "input_sha256": "2e1ace3862616bb2b0413dbfb2febf459dba51018e4f4dfd619eca0bbb98f51c",
+      "release_sha256": "2ead5fc282fd74f87ccdd54eb6489fe29437d05235f3f51096fa72ad644b05a1",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "solver.py",
+      "input_sha256": "0ab3cb01f4af7277697d4412e2b3fb57a7a3f06eb5cf230d6cbdb5e9698dfe05",
+      "release_sha256": "603bfb33f71b6db37e53d4b91e710e07ab46c341c3e6fb59e999c7a38e3f3b95",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "tests/test_mga_pipeline.py",
+      "input_sha256": "935041fbe276e814e8dd63b9405ddb6d4dc3f48a359a98b477a152c743c862ba",
+      "release_sha256": "9a4b78f49d063eae19b06d8c24fd3723fb6e0abec6d6a972005b5fe9b6b1ff2f",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "unlearning_iid.py",
+      "input_sha256": "d3e38dbe5e9fd6f081d10cbdc21a42e3dabd48c14107ff482280df232eadc7ef",
+      "release_sha256": "69314ad707df7dbe6730fb75de3e3ec00d4e9b67dfdd8588511bc578245962dd",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    },
+    {
+      "path": "validate_mga_run.py",
+      "input_sha256": "6d601791236ac251994d9079ef4e905e8c162c3c370919cf802453fac502d5f4",
+      "release_sha256": "2c8834316dc5e5694015122845cf4f829e4e763ef2e0a9c05a7e36e055b48141",
+      "ast_unchanged": true,
+      "legacy_default_path_changed": false
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "completed": true,
+  "stages": [
+    {
+      "stage": "create_clean_venv",
+      "exit_code": 0
+    },
+    {
+      "stage": "install_cpu_torch",
+      "exit_code": 0
+    },
+    {
+      "stage": "install_requirements",
+      "exit_code": 0
+    },
+    {
+      "stage": "dependency_consistency",
+      "exit_code": 0
+    },
+    {
+      "stage": "packaged_regressions",
+      "exit_code": 0
+    }
+  ],
+  "seconds": 192.62105788197368,
+  "inherits_system_packages": false,
+  "cpu_only": true,
+  "regression_tests_passed": 25,
+  "pip_check": "No broken requirements found.",
+  "pyvenv_system_site_packages": false
+}

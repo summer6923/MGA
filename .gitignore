@@ -1,0 +1,35 @@
+# Local environments and generated outputs
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+data/
+runs/
+outputs/
+models/
+checkpoints/
+*.pth
+*.pt
+*.pkl
+*.npy
+*.npz
+*.log
+*.zip
+*.tar
+*.tar.gz
+
+# Secrets and machine-specific state
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+.ssh/
+credentials*
+secrets*
+.DS_Store
+Thumbs.db

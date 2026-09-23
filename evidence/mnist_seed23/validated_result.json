@@ -1,0 +1,81 @@
+{
+  "execution_valid": true,
+  "run": "reference_run/mnist_seed23",
+  "targets": [
+    1,
+    10,
+    20,
+    30,
+    40,
+    50,
+    60,
+    70,
+    80,
+    90
+  ],
+  "poisoned_training_reads": 9600,
+  "reverse_dispatches": 10,
+  "reverse_steps": {
+    "1": 4,
+    "60": 4,
+    "30": 4,
+    "40": 4,
+    "50": 4,
+    "70": 4,
+    "90": 4,
+    "10": 4,
+    "80": 4,
+    "20": 4
+  },
+  "recovery_dispatches": 45,
+  "reverse_outputs_included_in_aggregate": true,
+  "metrics": {
+    "initial": {
+      "clean_correct": 958,
+      "clean_total": 10000,
+      "clean_accuracy": 0.0958,
+      "asr_hits": 0,
+      "asr_total": 8865,
+      "asr": 0.0,
+      "checkpoint_sha256": "ef7aeaee0a49b4f7f695911bcd85aaaa57a414da62d9cef18263f7f694a86c2f"
+    },
+    "before_request": {
+      "clean_correct": 9766,
+      "clean_total": 10000,
+      "clean_accuracy": 0.9766,
+      "asr_hits": 1581,
+      "asr_total": 8865,
+      "asr": 0.17834179357021995,
+      "checkpoint_sha256": "1886b4c99db8dced21fa9dd22f76240e123a558395abf08c4bad0d641a7df0c3"
+    },
+    "reference": {
+      "clean_correct": 9689,
+      "clean_total": 10000,
+      "clean_accuracy": 0.9689,
+      "asr_hits": 1442,
+      "asr_total": 8865,
+      "asr": 0.16266215454032712,
+      "checkpoint_sha256": "aa241088f93ff3fcf8b8d3541fe5cf9f1d2f76e09e513ad78bce9a76493fe4e0"
+    },
+    "after_unlearning": {
+      "clean_correct": 9689,
+      "clean_total": 10000,
+      "clean_accuracy": 0.9689,
+      "asr_hits": 1350,
+      "asr_total": 8865,
+      "asr": 0.15228426395939088,
+      "checkpoint_sha256": "d2e75a9e27de1e0b19aad3d22c9f15c47bebfa9f1ee448b4a412a0df7df2cfcf"
+    },
+    "after_recovery": {
+      "clean_correct": 9809,
+      "clean_total": 10000,
+      "clean_accuracy": 0.9809,
+      "asr_hits": 194,
+      "asr_total": 8865,
+      "asr": 0.02188381274675691,
+      "checkpoint_sha256": "1d38e1aedfa60d8004692031b5b1fbe4828e327312d46f8bcb9787b1791db5da"
+    }
+  },
+  "asr_protocol": "full non-target test set; raw-space inversion then training normalization",
+  "warning": "Execution validation, not proof of retraining equivalence or reproduction of old benchmark values."
+}

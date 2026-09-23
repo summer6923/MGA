@@ -1,0 +1,44 @@
+test_failed_child_cannot_reuse_existing_model (__main__.ClientAndProcessTests.test_failed_child_cannot_reuse_existing_model) ... ok
+test_startup_without_datasource_does_not_sample (__main__.ClientAndProcessTests.test_startup_without_datasource_does_not_sample) ... ok
+test_worker_reuse_clears_target_phase_and_epoch_state (__main__.ClientAndProcessTests.test_worker_reuse_clears_target_phase_and_epoch_state) ... [INFO][12:55:53]: [Client #1] Dynamic unlearning_epochs (E)=2 (server aggregations=None, client aggregations=None).
+[INFO][12:55:53]: [Client #1] Local recovery epochs=9.
+[INFO][12:55:53]: [Client #6] Local recovery epochs=2.
+ok
+test_cifar_and_purchase_inversion (__main__.DataTests.test_cifar_and_purchase_inversion) ... ok
+test_deletion_subset_preserves_original_partition (__main__.DataTests.test_deletion_subset_preserves_original_partition) ... ok
+test_escaped_partition_and_double_wrapper_rejected (__main__.DataTests.test_escaped_partition_and_double_wrapper_rejected) ... ok
+test_exact_rate_deterministic_membership (__main__.DataTests.test_exact_rate_deterministic_membership) ... ok
+test_fraction_extremes_and_validation (__main__.DataTests.test_fraction_extremes_and_validation) ... ok
+test_input_and_label_changed_without_mutating_dataset (__main__.DataTests.test_input_and_label_changed_without_mutating_dataset) ... ok
+test_membership_does_not_change_global_rng (__main__.DataTests.test_membership_does_not_change_global_rng) ... ok
+test_retained_and_disabled_are_clean (__main__.DataTests.test_retained_and_disabled_are_clean) ... ok
+test_all_returns_required_before_recovery (__main__.ProtocolTests.test_all_returns_required_before_recovery) ... [INFO][12:55:53]: MGA_EVENT {"event": "reverse_return", "round": 5, "monotonic_seconds": 3777267.135686616, "phase": "unlearn", "request_id": "req", "client_id": 1, "reverse": {"gradient_examples": 4, "accepted_steps": 1}, "poison_reads": 0}
+[INFO][12:55:53]: MGA_EVENT {"event": "reverse_return", "round": 5, "monotonic_seconds": 3777267.136043137, "phase": "unlearn", "request_id": "req", "client_id": 2, "reverse": {"gradient_examples": 4, "accepted_steps": 1}, "poison_reads": 0}
+[INFO][12:55:53]: MGA_EVENT {"event": "reverse_return", "round": 5, "monotonic_seconds": 3777267.136143534, "phase": "unlearn", "request_id": "req", "client_id": 3, "reverse": {"gradient_examples": 4, "accepted_steps": 1}, "poison_reads": 0}
+[INFO][12:55:53]: MGA_EVENT {"event": "target_batch_selected", "round": 5, "monotonic_seconds": 3777267.136485111, "phase": "unlearn", "request_id": "req", "clients": [4]}
+[INFO][12:55:53]: MGA_EVENT {"event": "reverse_return", "round": 5, "monotonic_seconds": 3777267.136682724, "phase": "unlearn", "request_id": "req", "client_id": 4, "reverse": {"gradient_examples": 4, "accepted_steps": 1}, "poison_reads": 0}
+[INFO][12:55:53]: MGA_EVENT {"event": "unlearning_complete", "round": 5, "monotonic_seconds": 3777267.138152326, "phase": "recover", "request_id": "req", "targets": [1, 2, 3, 4]}
+[INFO][12:55:53]: MGA_EVENT {"event": "recovery_selected", "round": 5, "monotonic_seconds": 3777267.138597937, "phase": "recover", "request_id": "req", "clients": [6, 7, 5, 8]}
+ok
+test_combination_rejects_nonfinite_and_preserves_integer_buffer (__main__.ProtocolTests.test_combination_rejects_nonfinite_and_preserves_integer_buffer) ... ok
+test_old_inflight_returns_are_drained_not_aggregated (__main__.ProtocolTests.test_old_inflight_returns_are_drained_not_aggregated) ... [INFO][12:55:53]: MGA_EVENT {"event": "discard_pre_request_return", "round": 5, "monotonic_seconds": 3777267.139981889, "phase": "drain", "request_id": "req", "client_id": 1}
+[INFO][12:55:53]: MGA_EVENT {"event": "discard_pre_request_return", "round": 5, "monotonic_seconds": 3777267.14031808, "phase": "drain", "request_id": "req", "client_id": 1}
+ok
+test_recovery_rejects_untagged_or_target_updates (__main__.ProtocolTests.test_recovery_rejects_untagged_or_target_updates) ... ok
+test_retrain_switch_does_not_enable_mga (__main__.ProtocolTests.test_retrain_switch_does_not_enable_mga) ... ok
+test_reverse_output_is_not_overwritten_by_cluster_test (__main__.ProtocolTests.test_reverse_output_is_not_overwritten_by_cluster_test) ... ok
+test_small_last_batch_not_waiting_for_normal_threshold (__main__.ProtocolTests.test_small_last_batch_not_waiting_for_normal_threshold) ... ok
+test_targets_selected_despite_exclusion_flag (__main__.ProtocolTests.test_targets_selected_despite_exclusion_flag) ... [INFO][12:55:53]: MGA_EVENT {"event": "target_batch_selected", "round": 5, "monotonic_seconds": 3777267.145801431, "phase": "unlearn", "request_id": "req", "clients": [1, 2, 3]}
+ok
+test_wrong_stale_retained_and_duplicate_returns_fail (__main__.ProtocolTests.test_wrong_stale_retained_and_duplicate_returns_fail) ... [INFO][12:55:53]: MGA_EVENT {"event": "reverse_return", "round": 5, "monotonic_seconds": 3777267.14618939, "phase": "unlearn", "request_id": "req", "client_id": 1, "reverse": {"gradient_examples": 4, "accepted_steps": 1}, "poison_reads": 0}
+ok
+test_invalid_numeric_and_empty_inputs (__main__.ReverseTests.test_invalid_numeric_and_empty_inputs) ... ok
+test_larger_budget_boundary_rule (__main__.ReverseTests.test_larger_budget_boundary_rule) ... ok
+test_loss_increases_and_full_gradient_count (__main__.ReverseTests.test_loss_increases_and_full_gradient_count) ... ok
+test_reject_infeasible_instead_of_project (__main__.ReverseTests.test_reject_infeasible_instead_of_project) ... ok
+test_zero_gradient (__main__.ReverseTests.test_zero_gradient) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.023s
+
+OK
