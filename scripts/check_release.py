@@ -18,7 +18,7 @@ RULES = {
 }
 REQUIRED = ['LICENSE', 'NOTICE', 'README.md', 'SECURITY.md', 'THIRD_PARTY_NOTICES.md',
             'MODIFICATIONS.md', 'requirements.txt', 'VERSION', 'configs/mga_mnist_full.yml',
-            'configs/mga_mnist_smoke.yml', 'configs/mga_cifar10_full.yml',
+            'configs/mga_cifar10_full.yml',
             'configs/mga_purchase_full.yml',
             'mga/data.py', 'mga/protocol.py', 'mga/reverse.py', 'mga/entry.py',
             'mga/evaluation.py', 'docs/implementation.md']

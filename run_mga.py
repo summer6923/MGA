@@ -2,7 +2,7 @@
 # Distributed under Apache-2.0; see LICENSE, NOTICE and MODIFICATIONS.md.
 """Run a fresh MGA experiment without overwriting code, models, or results.
 
-Linux: python run_mga.py --config configs/mga_mnist_smoke.yml \
+Linux: python run_mga.py --config configs/mga_mnist_full.yml \
   --data-path /path/to/cached/data --output /new/output/directory --gpu 0
 """
 from pathlib import Path

@@ -38,10 +38,6 @@ python validate_mga_run.py --run ./runs/purchase-seed50 --device cuda:0
 
 The output directory must be new. `--timeout` limits the actual process lifetime,
 not the simulator clock. For CPU use `--gpu ""` and `--device cpu`.
-Small `mga_cifar10_smoke.yml` and `mga_purchase_smoke.yml` configurations exercise
-all phases with four clients and five rounds. They retain the same model and
-original dataset partitioning procedure but deliberately use very little training;
-their accuracies are not meaningful benchmark results.
 
 ## Data and evaluation
 

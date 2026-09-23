@@ -60,7 +60,7 @@ class Config:
                 "-c",
                 "--config",
                 type=str,
-                default="configs/mga_mnist_smoke.yml",
+                default="configs/mga_mnist_full.yml",
                 help="Federated learning configuration file.",
             )
             parser.add_argument(

@@ -5,22 +5,20 @@ target exclusion previously prevented target-local reverse optimization, and the
 backdoor YAML switches were not connected to the training data. Existing results,
 checkpoints and manuscripts are not migrated or relabelled as corrected results.
 
-## Run a fresh execution check
+## Run a fresh experiment
 
 Run from the repository root with the dependencies in `requirements.txt`.
 The commands below are Linux/POSIX commands. The launcher requires a NEW output
 path and cached datasets (or the underlying datasource's documented download).
 
 ```bash
-python run_mga.py --config configs/mga_mnist_smoke.yml \
-  --data-path /path/to/data --output /new/path/mga-smoke --gpu 0
-python validate_mga_run.py --run /new/path/mga-smoke --device cuda:0
+python run_mga.py --config configs/mga_mnist_full.yml \
+  --data-path /path/to/data --output /new/path/mnist-seed23 --gpu 0
+python validate_mga_run.py --run /new/path/mnist-seed23 --device cuda:0
 ```
 
-The eight-client smoke configuration is for software execution validation, not a
-paper benchmark. Run duration and sample counts must never be substituted into
-the paper. This implementation note describes the protocol, not a guarantee of
-benchmark performance on other machines.
+This command runs the full MNIST configuration. This implementation note describes
+the protocol, not a guarantee of benchmark performance on other machines.
 
 Dataset YAMLs and commands are documented in [configurations.md](configurations.md).
 The public `tests/` folder was removed at the maintainer's request; regression
