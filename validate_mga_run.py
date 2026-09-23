@@ -15,7 +15,7 @@ import torch
 from torchvision.datasets import MNIST
 import yaml
 
-from mga_data import invert_trigger
+from mga.data import invert_trigger
 from plato.models.lenet5 import Model
 
 

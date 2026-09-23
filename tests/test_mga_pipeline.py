@@ -50,11 +50,11 @@ CONFIG_PATH.write_text(yaml.safe_dump({
 }), encoding="utf8")
 sys.argv = [str(Path(__file__)), "-c", str(CONFIG_PATH)]
 from plato.config import Config
-from mga_data import PoisonSpec, PoisonedDataset, IndexSampler, select_subset, invert_trigger
-from mga_reverse import reverse_optimize
-from mga_protocol import PendingTargets, combine_states, clone_state, enabled_for_config
-from knot_server import Server
-from knot_client import Client
+from mga.data import PoisonSpec, PoisonedDataset, IndexSampler, select_subset, invert_trigger
+from mga.reverse import reverse_optimize
+from mga.protocol import PendingTargets, combine_states, clone_state, enabled_for_config
+from mga.server import Server
+from mga.client import Client
 from plato.clients import simple
 from plato.trainers.basic import Trainer
 

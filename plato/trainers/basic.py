@@ -358,7 +358,7 @@ class Trainer(base.Trainer):
         """The default training loop when a custom training loop is not supplied."""
         context = getattr(self, "mga_context", None)
         if unlearning and context and context["phase"] == "unlearn":
-            from mga_reverse import reverse_optimize
+            from mga.reverse import reverse_optimize
             if getattr(self, "mga_reference", None) is None:
                 raise RuntimeError("An explicit server reference is required for MGA.")
             self.run_history.reset()

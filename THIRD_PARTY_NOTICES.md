@@ -29,10 +29,10 @@ The original parent NOTICE file was absent, as recorded in the preparation check
 
 Python dependencies remain separate packages governed by their respective licenses.
 This archive does not bundle their wheels, CUDA runtime binaries, MOSEK license
-files, raw MNIST/CIFAR-10/Purchase data or private datasets. The current framework
-imports some optional components eagerly, which explains dependencies not directly
-used by the selected MNIST model. Optimized-clustering solver usage is outside the
-validated configuration; consult the relevant vendor terms before enabling it.
+files, raw MNIST/CIFAR-10/Purchase data or private datasets. The runtime retains
+shared grouping and transport support in addition to the selected MNIST path.
+Optimized-clustering solver usage is outside the validated configuration; consult
+the relevant vendor terms before enabling it.
 
 The separate reference checkpoints were produced by the corrected MNIST experiment.
 They are research artifacts, not third-party pretrained weights. Never execute or

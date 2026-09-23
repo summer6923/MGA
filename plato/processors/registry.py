@@ -13,70 +13,16 @@ from typing import Tuple
 from plato.config import Config
 from plato.processors import pipeline
 
-if not (
-    hasattr(Config().trainer, "use_tensorflow")
-    or hasattr(Config().trainer, "use_mindspore")
-):
-    from plato.processors import (
-        base,
-        compress,
-        decompress,
-        feature_randomized_response,
-        feature_gaussian,
-        feature_laplace,
-        feature_quantize,
-        feature_dequantize,
-        feature_unbatch,
-        inbound_feature_tensors,
-        outbound_feature_ndarrays,
-        model_deepcopy,
-        model_quantize,
-        model_quantize_qsgd,
-        model_dequantize,
-        model_dequantize_qsgd,
-        model_compress,
-        model_decompress,
-        model_randomized_response,
-        structured_pruning,
-        unstructured_pruning,
-    )
+from plato.processors import (base, model_deepcopy, compress, decompress, model_compress, model_decompress)
 
-    registered_processors = {
-        "base": base.Processor,
-        "compress": compress.Processor,
-        "decompress": decompress.Processor,
-        "feature_randomized_response": feature_randomized_response.Processor,
-        "feature_gaussian": feature_gaussian.Processor,
-        "feature_laplace": feature_laplace.Processor,
-        "feature_quantize": feature_quantize.Processor,
-        "feature_dequantize": feature_dequantize.Processor,
-        "feature_unbatch": feature_unbatch.Processor,
-        "inbound_feature_tensors": inbound_feature_tensors.Processor,
-        "outbound_feature_ndarrays": outbound_feature_ndarrays.Processor,
-        "model_deepcopy": model_deepcopy.Processor,
-        "model_quantize": model_quantize.Processor,
-        "model_dequantize": model_dequantize.Processor,
-        "model_compress": model_compress.Processor,
-        "model_quantize_qsgd": model_quantize_qsgd.Processor,
-        "model_decompress": model_decompress.Processor,
-        "model_dequantize_qsgd": model_dequantize_qsgd.Processor,
-        "model_randomized_response": model_randomized_response.Processor,
-        "structured_pruning": structured_pruning.Processor,
-        "unstructured_pruning": unstructured_pruning.Processor,
-    }
-
-
-if hasattr(Config().server, "type") and Config().server.type == "fedavg_he":
-    # FedAvg server with homomorphic encryption needs to import tenseal, which is not available on
-    # all platforms such as macOS
-    from plato.processors import model_encrypt, model_decrypt
-
-    registered_processors.update(
-        {
-            "model_encrypt": model_encrypt.Processor,
-            "model_decrypt": model_decrypt.Processor,
-        }
-    )
+registered_processors = {
+    "base": base.Processor,
+    "model_deepcopy": model_deepcopy.Processor,
+    "compress": compress.Processor,
+    "decompress": decompress.Processor,
+    "model_compress": model_compress.Processor,
+    "model_decompress": model_decompress.Processor,
+}
 
 
 def get(
@@ -114,6 +60,8 @@ def get(
         else:
             this_kwargs = kwargs
 
+        if name not in registered_processors:
+            raise ValueError(f"Unsupported MGA payload processor: {name}")
         return registered_processors[name](name=name, **this_kwargs)
 
     outbound_processors = list(map(map_f, outbound_processors))

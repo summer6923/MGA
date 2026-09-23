@@ -1,8 +1,0 @@
-test_available_gpu_preserves_cuda_zero (__main__.DeviceFallbackTests.test_available_gpu_preserves_cuda_zero) ... ok
-test_cpu_build_defaults_to_cpu (__main__.DeviceFallbackTests.test_cpu_build_defaults_to_cpu) ... ok
-test_explicit_cpu_wins_over_available_gpu (__main__.DeviceFallbackTests.test_explicit_cpu_wins_over_available_gpu) ... ok
-
-----------------------------------------------------------------------
-Ran 3 tests in 1.028s
-
-OK

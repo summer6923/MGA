@@ -37,11 +37,7 @@ def run(client_id, port, client=None, edge_server=None, edge_client=None, traine
         )
 
         if edge_server is None:
-            from plato.clients import edge
-            from plato.servers import fedavg_cs
-
-            server = fedavg_cs.Server()
-            client = edge.Client(server)
+            raise ValueError("The MGA runtime does not bundle generic cross-silo servers.")
         else:
             # A customized edge server
             if trainer is not None:

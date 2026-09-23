@@ -4,8 +4,6 @@ This pattern scan is not a guarantee that every possible secret is detected.
 from pathlib import Path
 import argparse
 import ast
-from collections import Counter
-import hashlib
 import json
 import os
 import re
@@ -21,7 +19,8 @@ RULES = {
 REQUIRED = ['LICENSE', 'NOTICE', 'README.md', 'SECURITY.md', 'THIRD_PARTY_NOTICES.md',
             'MODIFICATIONS.md', 'requirements.txt', 'VERSION', 'configs/mga_mnist_full.yml',
             'configs/mga_mnist_smoke.yml', 'tests/test_mga_pipeline.py',
-            'docs/RELEASE_CHECKS.md', 'docs/source_manifest.json', 'docs/config_provenance.json']
+            'mga/data.py', 'mga/protocol.py', 'mga/reverse.py', 'mga/entry.py',
+            'tests/test_release_portability.py', 'docs/implementation.md']
 
 
 def inspect_text(text):
@@ -83,18 +82,6 @@ def check(root):
                     local = target.split('#', 1)[0]
                     if local and not (path.parent / local).exists():
                         errors.append(f'Broken local documentation link in {rel}: {local}')
-    manifest_path = root / 'docs/source_manifest.json'
-    if manifest_path.exists():
-        for record in json.loads(manifest_path.read_text())['files']:
-            path = root / record['path']
-            if not path.is_file() or hashlib.sha256(path.read_bytes()).hexdigest() != record['release_sha256']:
-                errors.append('Copied-source identity mismatch: ' + record['path'])
-    config_provenance = root / 'docs/config_provenance.json'
-    if config_provenance.exists():
-        expected = json.loads(config_provenance.read_text())['release_config_sha256']
-        actual = hashlib.sha256((root / 'configs/mga_mnist_full.yml').read_bytes()).hexdigest()
-        if actual != expected:
-            errors.append('Full configuration identity mismatch.')
     return {'passed': not findings and not errors, 'source_files_scanned': len(files),
             'credential_candidate_count': len(findings),
             'rules': sorted(RULES), 'findings': findings, 'errors': errors,

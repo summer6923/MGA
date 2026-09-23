@@ -16,5 +16,5 @@ supplied this exact notice.
 
 This local fork includes historical research modifications and the corrected MGA
 request barrier, client-local poisoning, explicit reverse optimization, validation
-and release support files. See MODIFICATIONS.md and docs/source_manifest.json.
+and support files. See MODIFICATIONS.md for the modification record.
 It is not an official upstream Plato/KNOT release and implies no endorsement.

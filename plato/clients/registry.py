@@ -9,20 +9,10 @@ on a configuration at run-time.
 import logging
 
 from plato.config import Config
-from plato.clients import (
-    self_supervised_learning,
-    simple,
-    mistnet,
-    fedavg_personalized,
-    split_learning,
-)
+from plato.clients import simple
 
 registered_clients = {
     "simple": simple.Client,
-    "mistnet": mistnet.Client,
-    "fedavg_personalized": fedavg_personalized.Client,
-    "self_supervised_learning": self_supervised_learning.Client,
-    "split_learning": split_learning.Client,
 }
 
 

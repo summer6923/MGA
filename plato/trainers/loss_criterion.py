@@ -6,7 +6,6 @@ Obtaining the loss criterion for training workloads according to the configurati
 from typing import Union
 
 from torch import nn
-from lightly import loss
 
 from plato.config import Config
 
@@ -26,25 +25,6 @@ def get(**kwargs: Union[str, dict]):
         "TripletMarginLoss": nn.TripletMarginLoss,
         "KLDivLoss": nn.KLDivLoss,
     }
-
-    ssl_loss_criterion = {
-        "NegativeCosineSimilarity": loss.NegativeCosineSimilarity,
-        "NTXentLoss": loss.NTXentLoss,
-        "BarlowTwinsLoss": loss.BarlowTwinsLoss,
-        "DCLLoss": loss.DCLLoss,
-        "DCLWLoss": loss.DCLWLoss,
-        "DINOLoss": loss.DINOLoss,
-        "PMSNCustomLoss": loss.PMSNCustomLoss,
-        "SwaVLoss": loss.SwaVLoss,
-        "PMSNLoss": loss.PMSNLoss,
-        "SymNegCosineSimilarityLoss": loss.SymNegCosineSimilarityLoss,
-        "TiCoLoss": loss.TiCoLoss,
-        "VICRegLoss": loss.VICRegLoss,
-        "VICRegLLoss": loss.VICRegLLoss,
-        "MSNLoss": loss.MSNLoss,
-    }
-
-    registered_loss_criterion.update(ssl_loss_criterion)
 
     loss_criterion_name = (
         kwargs["loss_criterion"]
@@ -68,4 +48,6 @@ def get(**kwargs: Union[str, dict]):
 
     loss_criterion = registered_loss_criterion.get(loss_criterion_name)
 
+    if loss_criterion is None:
+        raise ValueError(f"Unsupported loss criterion: {loss_criterion_name}")
     return loss_criterion(**loss_criterion_params)

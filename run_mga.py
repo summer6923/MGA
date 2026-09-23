@@ -68,7 +68,8 @@ def main():
     env.pop("config_file", None)
     start = time.monotonic()
     reason = None
-    command = [sys.executable, "-B", "-u", str(root / "mga_entry.py"), "-c", str(resolved), "-l", "info"]
+    env["PYTHONPATH"] = str(root) + (os.pathsep + env["PYTHONPATH"] if env.get("PYTHONPATH") else "")
+    command = [sys.executable, "-B", "-u", "-m", "mga.entry", "-c", str(resolved), "-l", "info"]
     process = None
     try:
         with (output / "train.log").open("x", encoding="utf8") as log:

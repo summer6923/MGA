@@ -1,9 +1,0 @@
-{
-  "seed": 23,
-  "resume": false,
-  "initial_model_state_path": null,
-  "tensor_sha256": "23da789f14b2cf67e884b71c135ac478d6f8a47f5bb78d2a6fa180c5a092f9d5",
-  "tensors": 10,
-  "torch_version": "2.13.0+cu130",
-  "model_module": "plato.models.lenet5"
-}
