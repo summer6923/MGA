@@ -12,7 +12,6 @@ from plato.trainers import basic
 
 registered_trainers = {
     "basic": basic.Trainer,
-    "timm_basic": basic.TrainerWithTimmScheduler,
 }
 
 

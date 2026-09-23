@@ -5,7 +5,7 @@ The Purchase100 dataset.
 """
 import os
 import logging
-import urllib
+import urllib.request
 import tarfile
 import torch
 import numpy as np
@@ -21,23 +21,32 @@ class DataSource(base.DataSource):
         super().__init__()
         root_path = Config().params["data_path"]
         dataset_path = os.path.join(root_path, "dataset_purchase")
-        if not os.path.isdir(root_path):
-            os.mkdir(root_path)
-        if not os.path.isfile(dataset_path):
+        os.makedirs(root_path, exist_ok=True)
+        cache_path = os.path.join(root_path, "purchase_numpy.npz")
+        if not os.path.isfile(cache_path):
             self.download_dataset(root_path, dataset_path)
 
         self.trainset, self.testset = self.extract_data(root_path)
 
     def download_dataset(self, root_path, dataset_path):
         """Download the Purchase100 dataset."""
-        logging.info("Downloading the Purchase100 dataset...")
-        filename = "https://www.comp.nus.edu.sg/~reza/files/dataset_purchase.tgz"
-        urllib.request.urlretrieve(
-            filename, os.path.join(root_path, "tmp_purchase.tgz")
-        )
-        logging.info("Dataset downloaded.")
-        tar = tarfile.open(os.path.join(root_path, "tmp_purchase.tgz"))
-        tar.extractall(path=root_path)
+        if not os.path.isfile(dataset_path):
+            logging.info("Downloading the Purchase100 dataset...")
+            filename = "https://www.comp.nus.edu.sg/~reza/files/dataset_purchase.tgz"
+            archive = os.path.join(root_path, "tmp_purchase.tgz")
+            urllib.request.urlretrieve(filename, archive)
+            # Copy only the expected regular file, not arbitrary archive paths.
+            with tarfile.open(archive) as tar:
+                members = [m for m in tar.getmembers()
+                           if m.isfile() and m.name.lstrip("./") == "dataset_purchase"]
+                if len(members) != 1:
+                    raise ValueError("Purchase archive must contain one dataset_purchase file.")
+                stream = tar.extractfile(members[0])
+                if stream is None:
+                    raise ValueError("Purchase archive member is unreadable.")
+                with stream, open(dataset_path, "wb") as target:
+                    import shutil
+                    shutil.copyfileobj(stream, target)
 
         logging.info("Processing the dataset...")
         data_set = np.genfromtxt(dataset_path, delimiter=",")

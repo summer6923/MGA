@@ -16,14 +16,12 @@ from collections import deque
 import numpy
 import torch
 import torch.nn.functional as F
-from cvxopt import matrix
 from numpy.linalg import norm
 
 from plato.config import Config
 from plato.utils import fonts
 
 import mga.legacy.server as fedunlearning_server
-import mga.legacy.solver as solver
 from mga.protocol import MGAPipelineMixin
 
 
@@ -1085,6 +1083,7 @@ class Server(MGAPipelineMixin, fedunlearning_server.Server):
 
     def _convert_to_solver(self, client_training_times):
         """Transform useful dictionaries to solvable matrix."""
+        from cvxopt import matrix  # Optional legacy optimized-clustering dependency.
         observed_training_times = [
             training_time
             for training_time in client_training_times.values()
@@ -1254,6 +1253,8 @@ class Server(MGAPipelineMixin, fedunlearning_server.Server):
 
         client_training_times = self._extract_training_times(updates)
         self._cosine_similarity(updates)
+
+        from mga.legacy import solver  # Not imported by ordinary MGA runs.
 
         assignment_list = solver.solve(
             # workload_max

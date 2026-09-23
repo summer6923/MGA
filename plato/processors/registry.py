@@ -13,16 +13,9 @@ from typing import Tuple
 from plato.config import Config
 from plato.processors import pipeline
 
-from plato.processors import (base, model_deepcopy, compress, decompress, model_compress, model_decompress)
+from plato.processors import base
 
-registered_processors = {
-    "base": base.Processor,
-    "model_deepcopy": model_deepcopy.Processor,
-    "compress": compress.Processor,
-    "decompress": decompress.Processor,
-    "model_compress": model_compress.Processor,
-    "model_decompress": model_decompress.Processor,
-}
+registered_processors = {"base": base.Processor}
 
 
 def get(

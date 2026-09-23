@@ -1,0 +1,98 @@
+# Small execution check only; NOT a benchmark or paper reproduction.
+# Uses the same model and original dataset/sampler; only work budget is reduced.
+general:
+  base_path: .
+clients:
+  type: simple
+  speed_simulation: false
+  simulation_distribution:
+    distribution: pareto
+    alpha: 1
+  max_sleep_time: 0
+  sleep_simulation: false
+  avg_training_time: 0
+  random_seed: 1
+  total_clients: 4
+  per_round: 4
+  data_deletion_round: 3
+  clients_requesting_deletion:
+  - 1
+  - 2
+  deleted_data_ratio: 0.1
+  backdoor_enabled: true
+  backdoor_poison_rate: 0.8
+  backdoor_target_label: 1
+  backdoor_trigger: invert
+server:
+  address: 127.0.0.1
+  port: 26903
+  random_seed: 1
+  ping_timeout: 36000
+  ping_interval: 36000
+  synchronous: false
+  do_test: true
+  do_clustered_test: true
+  do_global_test: false
+  staleness_bound: 1000
+  window_size: 3
+  minimum_clients_aggregated: 4
+  do_optimized_clustering: false
+  clusters: 2
+  checkpoint_path: checkpoints
+  model_path: models
+  simulate_wall_time: true
+  group_seed: 1
+  grouping_method: random
+  skip_cluster_rollback_after_deletion: true
+  retained_fedavg_after_deletion: true
+  exclude_delete_clients_after_deletion: true
+  retained_recovery_epochs_after_deletion: 1
+  retained_recovery_lr_after_deletion: 0.08
+data:
+  datasource: CIFAR10
+  partition_size: 32
+  sampler: noniid
+  test_sampler: noniid
+  random_seed: 1
+  data_path: data
+trainer:
+  type: basic
+  model_name: resnet_18
+  epochs: 1
+  batch_size: 8
+  optimizer: SGD
+  lr_scheduler: LambdaLR
+  rounds: 5
+  max_concurrency: 1
+  target_accuracy: 0.99
+  target_accuracy_std: 0.005
+  unlearning_negate_loss: true
+  avg_mode: weighted_pth_rec
+  force_stop_at_rounds: true
+  unlearning_strategy: knot
+  unlearning_min_batches: 8
+  unlearning_grad_clip: 5.0
+  unlearning_window: 2
+  dynamic_e_min: 1
+  dynamic_e_max: 2
+  unlearning_lr_scale: 0.009
+  mga_enabled: true
+  mga_forget_scope: client
+  mga_radius: 0.5
+  mga_lr: 0.0009
+  random_seed: 1
+algorithm:
+  type: fedavg
+parameters:
+  optimizer:
+    lr: 0.1
+    momentum: 0.9
+    weight_decay: 0.0001
+  learning_rate:
+    gamma: 0.1
+    milestone_steps: 80ep,120ep
+  model:
+    num_classes: 10
+results:
+  types: round, elapsed_time, accuracy, clusters_accuracy
+  result_path: results

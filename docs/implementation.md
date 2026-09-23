@@ -12,7 +12,6 @@ The commands below are Linux/POSIX commands. The launcher requires a NEW output
 path and cached datasets (or the underlying datasource's documented download).
 
 ```bash
-python tests/test_mga_pipeline.py
 python run_mga.py --config configs/mga_mnist_smoke.yml \
   --data-path /path/to/data --output /new/path/mga-smoke --gpu 0
 python validate_mga_run.py --run /new/path/mga-smoke --device cuda:0
@@ -22,6 +21,13 @@ The eight-client smoke configuration is for software execution validation, not a
 paper benchmark. Run duration and sample counts must never be substituted into
 the paper. This implementation note describes the protocol, not a guarantee of
 benchmark performance on other machines.
+
+Dataset YAMLs and commands are documented in [configurations.md](configurations.md).
+The public `tests/` folder was removed at the maintainer's request; regression
+checks were archived outside this repository and are not training dependencies.
+The trimmed runtime retains only IID/non-IID sampling, standard PyTorch training,
+and identity payload pipelines used by these configurations. Optional inherited
+clustering solvers are kept separately and are not loaded by ordinary MGA runs.
 
 ## Scheduling fix
 
@@ -94,7 +100,7 @@ return, completion, and recovery selections. Per-job poison membership hashes,
 actual dataset reads, actual poison reads, accepted gradient steps and local losses
 are in `results/mga_clients/*.execution.json`. `validated_result.json` additionally
 reconstructs the target aggregation from returned weight files and evaluates the
-initial/before/reference/immediate/recovery MNIST checkpoints.
+initial/before/reference/immediate/recovery checkpoints for MNIST, CIFAR-10, or Purchase.
 
 These checks establish that the configured operations really ran. Good clean
 accuracy or low ASR alone does not establish historical influence removal. Full

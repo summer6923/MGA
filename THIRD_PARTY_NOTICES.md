@@ -31,8 +31,9 @@ Python dependencies remain separate packages governed by their respective licens
 This archive does not bundle their wheels, CUDA runtime binaries, MOSEK license
 files, raw MNIST/CIFAR-10/Purchase data or private datasets. The runtime retains
 shared grouping and transport support in addition to the selected MNIST path.
-Optimized-clustering solver usage is outside the validated configuration; consult
-the relevant vendor terms before enabling it.
+Optimized-clustering solver usage is outside the validated configuration. These
+packages are optional (`requirements-optional.txt`), loaded only by the legacy
+solver path; consult the relevant vendor terms before enabling it.
 
 The separate reference checkpoints were produced by the corrected MNIST experiment.
 They are research artifacts, not third-party pretrained weights. Never execute or

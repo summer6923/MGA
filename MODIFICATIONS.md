@@ -20,4 +20,14 @@ pending a separate rewrite. Runtime execution records and evaluation remain enab
 Training configurations and the numerical reverse-optimization implementation
 are preserved; entrypoint imports and package paths are updated.
 
+A second cleanup removes the public test suite after archiving it externally and
+trims unused sampler, compression, and third-party optimizer/scheduler integrations.
+Core transport, training, model definitions, and IID/non-IID partition membership
+remain. Legacy grouping solvers are lazy imports with optional requirements.
+The NumPy scheduler product call is updated for the pinned NumPy version. Purchase
+can use its existing NPZ cache without redownloading; its original split remains.
+Stage evaluation now supports all three configured datasets. New CIFAR-10/Purchase
+YAMLs adapt archived training settings to the corrected path and do not claim that
+their full historical benchmarks were reproduced. The README remains empty.
+
 Protocol details remain in [docs/implementation.md](docs/implementation.md).

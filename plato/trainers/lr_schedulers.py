@@ -5,11 +5,9 @@ Returns a learning rate scheduler according to the configuration.
 """
 import bisect
 import sys
-from types import SimpleNamespace
 from typing import Union
 
 import numpy as np
-from timm import scheduler
 from torch import optim
 
 from plato.config import Config
@@ -33,10 +31,6 @@ def get(
         "CosineAnnealingWarmRestarts": optim.lr_scheduler.CosineAnnealingWarmRestarts,
     }
 
-    registered_factories = {
-        "timm": scheduler.create_scheduler,
-    }
-
     _scheduler = (
         kwargs["lr_scheduler"]
         if "lr_scheduler" in kwargs
@@ -47,15 +41,6 @@ def get(
         if "lr_params" in kwargs
         else Config().parameters.learning_rate._asdict()
     )
-
-    # First, look up the registered factories of LR schedulers
-    if _scheduler in registered_factories:
-        scheduler_args = SimpleNamespace(**lr_params)
-        scheduler_args.epochs = Config().trainer.epochs
-        lr_scheduler, __ = registered_factories[_scheduler](
-            args=scheduler_args, optimizer=optimizer
-        )
-        return lr_scheduler
 
     # The list containing the learning rate schedulers that must be returned or
     # the learning rate schedulers that ChainedScheduler or SequentialLR will
@@ -113,7 +98,7 @@ def get(
             returned_schedulers.append(
                 retrieved_scheduler(
                     optimizer,
-                    lambda it, lambdas=lambdas: np.product([l(it) for l in lambdas]),
+                    lambda it, lambdas=lambdas: np.prod([l(it) for l in lambdas]),
                 )
             )
         elif _scheduler == "MultiStepLR":

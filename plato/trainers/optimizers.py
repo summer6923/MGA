@@ -5,9 +5,7 @@ Optimizers for training workloads.
 """
 from typing import Union
 
-import torch_optimizer as torch_optim
 from torch import optim
-from timm import optim as timm_optim
 
 from plato.config import Config
 
@@ -18,7 +16,6 @@ def get(model, **kwargs: Union[str, dict]) -> optim.Optimizer:
         "Adam": optim.Adam,
         "Adadelta": optim.Adadelta,
         "Adagrad": optim.Adagrad,
-        "AdaHessian": torch_optim.Adahessian,
         "AdamW": optim.AdamW,
         "SparseAdam": optim.SparseAdam,
         "Adamax": optim.Adamax,
@@ -29,7 +26,6 @@ def get(model, **kwargs: Union[str, dict]) -> optim.Optimizer:
         "RMSprop": optim.RMSprop,
         "Rprop": optim.Rprop,
         "SGD": optim.SGD,
-        "LARS": timm_optim.lars.Lars,
     }
 
     optimizer_name = (

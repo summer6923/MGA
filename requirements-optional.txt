@@ -1,0 +1,4 @@
+# Only needed for the inherited optimized-clustering solver.
+# The provided MGA YAMLs use random grouping and do not import these packages.
+cvxopt==1.3.3
+Mosek==11.2.4

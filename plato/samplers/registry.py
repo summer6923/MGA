@@ -7,24 +7,12 @@ Having a registry of all available classes is convenient for retrieving an insta
 on a configuration at run-time.
 """
 import logging
-from collections import OrderedDict
-import numpy as np
 
 from plato.config import Config
 
-from plato.samplers import (iid, dirichlet, mixed, orthogonal, all_inclusive, distribution_noniid, label_quantity_noniid, mixed_label_quantity_noniid, sample_quantity_noniid)
+from plato.samplers import iid, dirichlet
 
-registered_samplers = {
-    "iid": iid.Sampler,
-    "noniid": dirichlet.Sampler,
-    "mixed": mixed.Sampler,
-    "orthogonal": orthogonal.Sampler,
-    "all_inclusive": all_inclusive.Sampler,
-    "distribution_noniid": distribution_noniid.Sampler,
-    "label_quantity_noniid": label_quantity_noniid.Sampler,
-    "mixed_label_quantity_noniid": mixed_label_quantity_noniid.Sampler,
-    "sample_quantity_noniid": sample_quantity_noniid.Sampler,
-}
+registered_samplers = {"iid": iid.Sampler, "noniid": dirichlet.Sampler}
 
 
 def get(datasource, client_id, testing=False, **kwargs):
