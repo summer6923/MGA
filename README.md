@@ -101,9 +101,7 @@ python validate_mga_run.py --run ./runs/cifar10 --device cuda:0
 
 <div align="center">
 
-[![Method Notes](docs/assets/btn-method.png)](docs/implementation.md)
-[![Configurations](docs/assets/btn-configs.png)](docs/configurations.md)
-[![Built on Plato / KNOT](docs/assets/btn-plato.png)](NOTICE)
+<a href="docs/implementation.md"><img src="docs/assets/btn-method.png" height="48" alt="Method Notes"/></a> <a href="docs/configurations.md"><img src="docs/assets/btn-configs.png" height="48" alt="Configurations"/></a> <a href="NOTICE"><img src="docs/assets/btn-plato.png" height="48" alt="Built on Plato / KNOT"/></a>
 
 </div>
 
