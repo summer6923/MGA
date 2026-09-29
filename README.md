@@ -1,23 +1,8 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:5B7CFA,50:8E2DE2,100:FF6EC4&height=230&section=header&text=MGA&fontSize=100&fontColor=ffffff&fontAlignY=32&desc=Mirror%20Gradient%20Ascent%20for%20Asynchronous%20Federated%20Unlearning&descSize=19&descAlignY=55" width="100%" alt="MGA — Mirror Gradient Ascent for Asynchronous Federated Unlearning"/>
+<img src="docs/assets/hero.png" width="100%" alt="MGA — Mirror Gradient Ascent for Asynchronous Federated Unlearning"/>
 
 ### ✨ Forget Selectively · Learn Better · Together ✨
-
-*A cleaner & fairer future for asynchronous federated learning.*
-
-[![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
-[![License](https://img.shields.io/badge/License-Apache_2.0-2EA043?style=for-the-badge&logo=apache&logoColor=white)](LICENSE)
-
-<br>
-
-![Federated Learning](https://img.shields.io/badge/Federated_Learning-8E2DE2?style=flat-square)
-![Unlearning](https://img.shields.io/badge/Unlearning-00B8A9?style=flat-square)
-![Async FL](https://img.shields.io/badge/Async_FL-F5A623?style=flat-square)
-![IEEE T-CYB](https://img.shields.io/badge/IEEE_T--CYB-00629B?style=flat-square)
-
-<br>
 
 > **Staleness-aware reference modeling + constrained reverse optimization
 > for efficient asynchronous federated unlearning.** 🪞
@@ -26,7 +11,9 @@
 
 ---
 
-## 🪞 Why MGA?
+<div align="center">
+<img src="docs/assets/sec-why.png" height="58" alt="Why MGA?"/>
+</div>
 
 | | |
 |:---|:---|
@@ -35,7 +22,9 @@
 
 ---
 
-## 🧭 Method Overview
+<div align="center">
+<img src="docs/assets/sec-method.png" height="58" alt="Method Overview"/>
+</div>
 
 *From forgetting to a better global model, in four steps:*
 
@@ -48,7 +37,9 @@
 
 ---
 
-## 📊 Results Snapshot
+<div align="center">
+<img src="docs/assets/sec-results.png" height="58" alt="Results Snapshot"/>
+</div>
 
 *Effective unlearning, stronger models:*
 
@@ -60,7 +51,9 @@
 
 ---
 
-## ⚡ Quick Start
+<div align="center">
+<img src="docs/assets/sec-quickstart.png" height="58" alt="Quick Start"/>
+</div>
 
 ```bash
 # Linux/POSIX · Python 3.11
@@ -72,10 +65,10 @@ python -m pip install -r requirements.txt
 
 # Run a fresh MGA experiment (the output directory must be new)
 python run_mga.py --config configs/mga_cifar10_full.yml \
-    --data-path ./data --output ./runs/cifar10-seed1 --gpu 0 --timeout 86400
+    --data-path ./data --output ./runs/cifar10 --gpu 0 --timeout 86400
 
 # Validate the run
-python validate_mga_run.py --run ./runs/cifar10-seed1 --device cuda:0
+python validate_mga_run.py --run ./runs/cifar10 --device cuda:0
 ```
 
 > ⚠️ **Note** — the launcher requires **Linux/POSIX**; use `--gpu ""` for CPU-only runs.
@@ -88,9 +81,7 @@ python validate_mga_run.py --run ./runs/cifar10-seed1 --device cuda:0
 | CIFAR-10 | `configs/mga_cifar10_full.yml` | ResNet-18 |
 | Purchase | `configs/mga_purchase_full.yml` | Transformer |
 
----
-
-## 🗂️ Repository Layout
+### 🗂️ Repository Layout
 
 ```text
 📦 MGA
@@ -104,19 +95,23 @@ python validate_mga_run.py --run ./runs/cifar10-seed1 --device cuda:0
 
 ---
 
-## 🔗 Useful Links
+<div align="center">
+<img src="docs/assets/sec-links.png" height="58" alt="Useful Links"/>
+</div>
 
 <div align="center">
 
-[![Method Notes](https://img.shields.io/badge/Method_Notes-docs/implementation-4A90D9?style=for-the-badge&logo=readthedocs&logoColor=white)](docs/implementation.md)
-[![Configurations](https://img.shields.io/badge/Configurations-docs/configurations-4CAF50?style=for-the-badge&logo=yaml&logoColor=white)](docs/configurations.md)
-[![Built on](https://img.shields.io/badge/Built_on-Plato_/_KNOT-6A5ACD?style=for-the-badge&logo=github&logoColor=white)](NOTICE)
+[![Method Notes](docs/assets/btn-method.png)](docs/implementation.md)
+[![Configurations](docs/assets/btn-configs.png)](docs/configurations.md)
+[![Built on Plato / KNOT](docs/assets/btn-plato.png)](NOTICE)
 
 </div>
 
 ---
 
-## 📚 Citation
+<div align="center">
+<img src="docs/assets/sec-citation.png" height="58" alt="Citation"/>
+</div>
 
 If MGA contributes to your research, please consider citing:
 
@@ -135,13 +130,9 @@ If MGA contributes to your research, please consider citing:
 
 <div align="center">
 
-<br>
-
 > ### 💬 *"Selective Forgetting for a More Trustworthy Future."*
 > If you find MGA useful, please consider giving it a **⭐** — thanks for your interest! 🤖💙
 
-**Open Research** ❤️ **Smarter AI** ❤️ **A More Trustworthy World**
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF6EC4,50:8E2DE2,100:5B7CFA&height=140&section=footer" width="100%" alt="footer wave"/>
+<img src="docs/assets/footer.png" width="72%" alt="Open Research · Smarter AI · A More Trustworthy World"/>
 
 </div>
