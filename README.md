@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="docs/assets/hero.png" width="100%" alt="MGA — Mirror Gradient Ascent for Asynchronous Federated Unlearning"/>
+<img src="docs/assets/hero.png?v=3" width="100%" alt="MGA — Mirror Gradient Ascent for Asynchronous Federated Unlearning"/>
 
 ### ✨ Forget Selectively · Learn Better · Together ✨
 
@@ -12,25 +12,28 @@
 ---
 
 <div align="center">
-<img src="docs/assets/sec-why.png" height="58" alt="Why MGA?"/>
+<img src="docs/assets/sec-why.png?v=3" height="58" alt="Why MGA?"/>
 </div>
 
-| | |
-|:---|:---|
-| 🌱 **No affected-group retraining**<br>Unlearn target clients *without* retraining their whole group. | 🗄️ **Staleness-aware reference model**<br>Retained clients with different training speeds contribute with proper weights. |
-| 🎯 **Adaptive reverse budget**<br>Each target client gets a personalized unlearning budget based on its own history. | 🚀 **Fast recovery with retained clients**<br>Aggregate returned models and quickly resume training. |
+<div align="center">
+
+<img src="docs/assets/card-why1.png?v=3" width="49%" alt="No affected-group retraining"/> <img src="docs/assets/card-why2.png?v=3" width="49%" alt="Staleness-aware reference model"/>
+
+<img src="docs/assets/card-why3.png?v=3" width="49%" alt="Adaptive reverse budget"/> <img src="docs/assets/card-why4.png?v=3" width="49%" alt="Fast recovery with retained clients"/>
+
+</div>
 
 ---
 
 <div align="center">
-<img src="docs/assets/sec-method.png" height="58" alt="Method Overview"/>
+<img src="docs/assets/sec-method.png?v=3" height="58" alt="Method Overview"/>
 </div>
 
-*From forgetting to a better global model, in four steps:*
+<div align="center">
 
-| 1️⃣ Grouped Async FL | 2️⃣ Reference Model | 3️⃣ Reverse Optimization | 4️⃣ Resume Training |
-|:---:|:---:|:---:|:---:|
-| Clients are **grouped by local training speed**. | A **staleness-aware reference** model is built from retained clients. | Each target client runs **budget-bounded local reverse updates**. | Returned models are **aggregated** and training quickly resumes. |
+<img src="docs/assets/card-m1.png?v=3" width="24%" alt="Step 1 — Grouped Async FL"/> <img src="docs/assets/card-m2.png?v=3" width="24%" alt="Step 2 — Reference Model"/> <img src="docs/assets/card-m3.png?v=3" width="24%" alt="Step 3 — Reverse Optimization"/> <img src="docs/assets/card-m4.png?v=3" width="24%" alt="Step 4 — Resume Training"/>
+
+</div>
 
 > 📌 This page intentionally keeps things high-level — the full formulation lives in the paper,
 > with implementation notes in [`docs/implementation.md`](docs/implementation.md).
@@ -38,21 +41,21 @@
 ---
 
 <div align="center">
-<img src="docs/assets/sec-results.png" height="58" alt="Results Snapshot"/>
+<img src="docs/assets/sec-results.png?v=3" height="58" alt="Results Snapshot"/>
 </div>
 
-*Effective unlearning, stronger models:*
+<div align="center">
 
-| 🧊 CIFAR-10 | ✍️ MNIST | 🛒 Purchase |
-|:---:|:---:|:---:|
-| **~25% faster** than full retraining to reach the 70% accuracy mark. | **Highest final accuracy** among no-retrain baselines. | **Backdoor robustness closest to retraining** in 15 / 18 settings. |
+<img src="docs/assets/card-res1.png?v=3" width="32%" alt="CIFAR-10 results"/> <img src="docs/assets/card-res2.png?v=3" width="32%" alt="MNIST results"/> <img src="docs/assets/card-res3.png?v=3" width="32%" alt="Purchase results"/>
 
-<sup>Full curves and the evaluation protocol are available in the paper and [`docs/`](docs).</sup>
+</div>
+
+<sup>Illustrative sketches — full curves and the evaluation protocol are available in the paper and [`docs/`](docs).</sup>
 
 ---
 
 <div align="center">
-<img src="docs/assets/sec-quickstart.png" height="58" alt="Quick Start"/>
+<img src="docs/assets/sec-quickstart.png?v=3" height="58" alt="Quick Start"/>
 </div>
 
 ```bash
@@ -96,19 +99,19 @@ python validate_mga_run.py --run ./runs/cifar10 --device cuda:0
 ---
 
 <div align="center">
-<img src="docs/assets/sec-links.png" height="58" alt="Useful Links"/>
+<img src="docs/assets/sec-links.png?v=3" height="58" alt="Useful Links"/>
 </div>
 
 <div align="center">
 
-<a href="docs/implementation.md"><img src="docs/assets/btn-method.png" height="48" alt="Method Notes"/></a> <a href="docs/configurations.md"><img src="docs/assets/btn-configs.png" height="48" alt="Configurations"/></a> <a href="NOTICE"><img src="docs/assets/btn-plato.png" height="48" alt="Built on Plato / KNOT"/></a>
+<a href="docs/implementation.md"><img src="docs/assets/btn-method.png?v=3" height="48" alt="Method Notes"/></a> <a href="docs/configurations.md"><img src="docs/assets/btn-configs.png?v=3" height="48" alt="Configurations"/></a> <a href="NOTICE"><img src="docs/assets/btn-plato.png?v=3" height="48" alt="Built on Plato / KNOT"/></a>
 
 </div>
 
 ---
 
 <div align="center">
-<img src="docs/assets/sec-citation.png?v=2" height="58" alt="Citation"/>
+<img src="docs/assets/sec-citation.png?v=3" height="58" alt="Citation"/>
 </div>
 
 If MGA contributes to your research, please consider citing:
@@ -131,6 +134,6 @@ If MGA contributes to your research, please consider citing:
 > ### 💬 *"Selective Forgetting for a More Trustworthy Future."*
 > If you find MGA useful, please consider giving it a **⭐** — thanks for your interest! 🤖💙
 
-<img src="docs/assets/footer.png?v=2" width="72%" alt="Open Research · Smarter AI · A More Trustworthy World"/>
+<img src="docs/assets/footer.png?v=3" width="72%" alt="Open Research · Smarter AI · A More Trustworthy World"/>
 
 </div>
