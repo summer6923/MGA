@@ -108,7 +108,7 @@ python validate_mga_run.py --run ./runs/cifar10 --device cuda:0
 ---
 
 <div align="center">
-<img src="docs/assets/sec-citation.png" height="58" alt="Citation"/>
+<img src="docs/assets/sec-citation.png?v=2" height="58" alt="Citation"/>
 </div>
 
 If MGA contributes to your research, please consider citing:
@@ -131,6 +131,6 @@ If MGA contributes to your research, please consider citing:
 > ### 💬 *"Selective Forgetting for a More Trustworthy Future."*
 > If you find MGA useful, please consider giving it a **⭐** — thanks for your interest! 🤖💙
 
-<img src="docs/assets/footer.png" width="72%" alt="Open Research · Smarter AI · A More Trustworthy World"/>
+<img src="docs/assets/footer.png?v=2" width="72%" alt="Open Research · Smarter AI · A More Trustworthy World"/>
 
 </div>
