@@ -1,0 +1,12 @@
+# Direct dependencies for the supported PyTorch MGA runtime.
+# Install the appropriate CPU/CUDA torch and torchvision wheels first.
+aiohttp==3.14.3
+boto3==1.43.100
+einops==0.8.1
+numpy==2.4.6
+Pillow==12.3.0
+python-socketio==5.16.4
+PyYAML==6.0.3
+requests==2.34.2
+torch==2.13.0
+torchvision==0.28.0

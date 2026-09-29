@@ -1,0 +1,104 @@
+# MGA local research fork; includes modifications relative to upstream Plato/KNOT.
+# Distributed under Apache-2.0; see LICENSE and NOTICE.
+"""
+The Purchase100 dataset.
+"""
+import os
+import logging
+import urllib.request
+import tarfile
+import torch
+import numpy as np
+from torch.utils import data
+from plato.config import Config
+from plato.datasources import base
+
+
+class DataSource(base.DataSource):
+    """The Purchase100 dataset."""
+
+    def __init__(self, **kwargs):
+        super().__init__()
+        root_path = Config().params["data_path"]
+        dataset_path = os.path.join(root_path, "dataset_purchase")
+        os.makedirs(root_path, exist_ok=True)
+        cache_path = os.path.join(root_path, "purchase_numpy.npz")
+        if not os.path.isfile(cache_path):
+            self.download_dataset(root_path, dataset_path)
+
+        self.trainset, self.testset = self.extract_data(root_path)
+
+    def download_dataset(self, root_path, dataset_path):
+        """Download the Purchase100 dataset."""
+        if not os.path.isfile(dataset_path):
+            logging.info("Downloading the Purchase100 dataset...")
+            filename = "https://www.comp.nus.edu.sg/~reza/files/dataset_purchase.tgz"
+            archive = os.path.join(root_path, "tmp_purchase.tgz")
+            urllib.request.urlretrieve(filename, archive)
+            # Copy only the expected regular file, not arbitrary archive paths.
+            with tarfile.open(archive) as tar:
+                members = [m for m in tar.getmembers()
+                           if m.isfile() and m.name.lstrip("./") == "dataset_purchase"]
+                if len(members) != 1:
+                    raise ValueError("Purchase archive must contain one dataset_purchase file.")
+                stream = tar.extractfile(members[0])
+                if stream is None:
+                    raise ValueError("Purchase archive member is unreadable.")
+                with stream, open(dataset_path, "wb") as target:
+                    import shutil
+                    shutil.copyfileobj(stream, target)
+
+        logging.info("Processing the dataset...")
+        data_set = np.genfromtxt(dataset_path, delimiter=",")
+        logging.info("Finish processing the dataset.")
+
+        X = data_set[:, 1:].astype(np.float64)
+        Y = (data_set[:, 0]).astype(np.int32) - 1
+        np.savez(os.path.join(root_path, "purchase_numpy.npz"), X=X, Y=Y)
+
+    def extract_data(self, root_path):
+        """Extract data."""
+        dataset = np.load(os.path.join(root_path, "purchase_numpy.npz"))
+
+        ## randomly shuffle the data
+        X, Y = dataset["X"], dataset["Y"]
+        np.random.seed(0)
+        indices = np.arange(len(X))
+        np.random.shuffle(indices)
+        X, Y = X[indices], Y[indices]
+
+        ## extract 20000 data samplers for training and testing respectively
+        num_train = 20000
+        train_data = X[:num_train]
+        test_data = X[num_train : num_train * 2]
+        train_label = Y[:num_train]
+        test_label = Y[num_train : num_train * 2]
+
+        ## create datasets
+        train_dataset = VectorDataset(train_data, train_label)
+        test_dataset = VectorDataset(test_data, test_label)
+
+        return train_dataset, test_dataset
+
+    def num_train_examples(self):
+        return 20000
+
+    def num_test_examples(self):
+        return 20000
+
+
+class VectorDataset(data.Dataset):
+    """
+    Create a Purchase100 dataset based on features and labels
+    """
+
+    def __init__(self, features, labels):
+        self.data = torch.stack([torch.FloatTensor(i) for i in features])
+        self.targets = torch.stack([torch.LongTensor([i]) for i in labels])[:, 0]
+        self.classes = [f"Style #{i}" for i in range(100)]
+
+    def __getitem__(self, index):
+        return self.data[index], self.targets[index]
+
+    def __len__(self):
+        return self.data.size(0)
