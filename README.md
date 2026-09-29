@@ -134,6 +134,6 @@ If MGA contributes to your research, please consider citing:
 > ### 💬 *"Selective Forgetting for a More Trustworthy Future."*
 > If you find MGA useful, please consider giving it a **⭐** — thanks for your interest! 🤖💙
 
-<img src="docs/assets/footer.png?v=3" width="72%" alt="Open Research · Smarter AI · A More Trustworthy World"/>
+<img src="docs/assets/footer.png?v=4" width="72%" alt="Open Research · Smarter AI · A More Trustworthy World"/>
 
 </div>
